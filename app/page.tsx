@@ -1,0 +1,253 @@
+import Image from "next/image";
+import Link from "next/link";
+
+import { AgendaNav } from "@/components/agenda-nav";
+import heroBanner from "@/herobanner.png";
+import {
+  agenda,
+  contacts,
+  faqs,
+  highlights,
+  retreat,
+} from "@/lib/content";
+
+function ThemeWordmark() {
+  return (
+    <div className="mt-6 space-y-4">
+      <div className="space-y-2">
+        <div className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Be The
+        </div>
+        <div className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
+          <span className="text-sunset">S</span>
+          <span className="text-white">piritual </span>
+          <span className="text-sunset">A</span>
+          <span className="text-white">thlete </span>
+          <span className="text-sunset">I</span>
+          <span className="text-white">nside</span>
+        </div>
+      </div>
+      <p className="text-base font-semibold uppercase tracking-[0.24em] text-white/80 sm:text-lg">
+        Highlighting the inner call of S A I
+      </p>
+    </div>
+  );
+}
+
+export default function HomePage() {
+  return (
+    <main className="pb-16">
+      <section className="page-shell py-10 lg:py-16">
+        <div className="card overflow-hidden">
+          <div className="relative aspect-[16/6] min-h-[260px] w-full sm:min-h-[320px] lg:min-h-[420px]">
+            <Image
+              src={heroBanner}
+              alt="Region 7 Sai Retreat hero banner"
+              fill
+              priority
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy/18 to-navy/70" />
+            <div className="absolute inset-x-0 bottom-0 flex justify-end p-6 sm:p-8 lg:justify-center lg:px-24 lg:py-10">
+              <div className="max-w-3xl rounded-[2rem] border border-white/25 bg-white/14 p-5 text-white backdrop-blur-md sm:p-7">
+                <p className="pill border-white/20 bg-white/20 text-white">August 21 to 23, 2026</p>
+                <p className="mt-5 text-lg font-medium uppercase tracking-[0.28em] text-sunset sm:text-xl">
+                  Retreat Theme
+                </p>
+                <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+                  {retreat.name}
+                </h1>
+                <ThemeWordmark />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="page-shell grid gap-10 lg:grid-cols-[1.35fr,0.9fr]">
+        <div className="card relative overflow-hidden p-8 sm:p-10 lg:p-12">
+          <div className="absolute inset-0 bg-halo opacity-80" />
+          <div className="relative">
+            <p className="mt-6 max-w-2xl text-lg leading-8 text-navy/78 sm:text-xl">
+              A warm, peaceful weekend in the redwoods designed for spiritual practice,
+              fellowship, learning, and family participation.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href={retreat.registrationUrl}
+                className="rounded-full bg-navy px-6 py-4 text-lg font-semibold text-white hover:bg-saffron"
+              >
+                Register
+              </Link>
+              <Link
+                href="/agenda"
+                className="rounded-full border border-navy/15 bg-white px-6 py-4 text-lg font-semibold text-navy hover:border-saffron/40 hover:text-saffron"
+              >
+                View full agenda
+              </Link>
+            </div>
+            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+              <div className="rounded-[1.5rem] bg-white/90 p-5">
+                <p className="text-sm uppercase tracking-[0.2em] text-saffron">When</p>
+                <p className="mt-3 text-xl font-semibold leading-8">{retreat.dates}</p>
+              </div>
+              <div className="rounded-[1.5rem] bg-white/90 p-5">
+                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Time</p>
+                <p className="mt-3 text-xl font-semibold leading-8">{retreat.timeWindow}</p>
+              </div>
+              <div className="rounded-[1.5rem] bg-white/90 p-5">
+                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Where</p>
+                <p className="mt-3 text-xl font-semibold leading-8">{retreat.venue}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="card overflow-hidden">
+          <div className="border-b border-white/60 bg-gradient-to-br from-navy to-[#274a72] p-6 text-white">
+            <Image
+              src={retreat.logoUrl}
+              alt="SSIO logo"
+              width={84}
+              height={84}
+              className="h-20 w-20 rounded-full bg-white/90 p-2"
+            />
+            <p className="mt-6 text-sm uppercase tracking-[0.24em] text-white/70">
+              Retreat inspiration
+            </p>
+            <h2 className="mt-2 text-3xl font-semibold leading-tight">
+              A devotional first draft with a clearer path through each day
+            </h2>
+          </div>
+          <div className="relative aspect-[4/3]">
+            <Image
+              src={retreat.heroImageUrl}
+              alt="Swami retreat inspiration"
+              fill
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="page-shell grid gap-8 pb-8 lg:grid-cols-[1.2fr,0.8fr]">
+        <div className="space-y-8">
+          <section className="card p-8 sm:p-10">
+            <p className="pill">Theme</p>
+            <h2 className="section-title mt-5">{retreat.theme}</h2>
+            <p className="section-copy mt-5">
+              This theme invites devotees to think of spiritual life as steady inner
+              training: discipline with love, devotion with purpose, service with humility,
+              and transformation that reaches everyday life.
+            </p>
+          </section>
+
+          <section className="card p-8 sm:p-10">
+            <p className="pill">Retreat Highlights</p>
+            <div className="mt-6 grid gap-4 md:grid-cols-2">
+              {highlights.map((item) => (
+                <div key={item} className="rounded-[1.75rem] bg-sky/55 p-6">
+                  <p className="text-xl font-semibold leading-8">{item}</p>
+                </div>
+              ))}
+            </div>
+          </section>
+        </div>
+
+        <AgendaNav />
+      </section>
+
+      <section className="page-shell py-8">
+        <div className="card p-8 sm:p-10">
+          <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <p className="pill">Weekend Walkthrough</p>
+              <h2 className="section-title mt-5">A day-by-day timeline at a glance</h2>
+            </div>
+            <Link href="/agenda" className="text-lg font-semibold text-saffron hover:text-navy">
+              Open the full agenda
+            </Link>
+          </div>
+          <div className="mt-8 grid gap-5 lg:grid-cols-3">
+            {agenda.map((day) => (
+              <article key={day.id} className="rounded-[2rem] border border-navy/10 bg-white p-6">
+                <p className="text-sm uppercase tracking-[0.22em] text-saffron">{day.label}</p>
+                <h3 className="mt-3 text-3xl font-semibold">{day.date}</h3>
+                <p className="mt-3 text-lg leading-8 text-navy/75">{day.summary}</p>
+                <div className="mt-5 space-y-3">
+                  {day.items.slice(0, 4).map((item) => (
+                    <div key={`${day.id}-${item.time}`} className="rounded-2xl bg-sand p-4">
+                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-saffron">
+                        {item.time}
+                      </p>
+                      <p className="mt-2 text-xl font-semibold leading-8">{item.title}</p>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="page-shell grid gap-8 py-8 lg:grid-cols-[1fr,1fr]">
+        <section className="card p-8 sm:p-10">
+          <p className="pill">Location</p>
+          <h2 className="section-title mt-5">{retreat.venue}</h2>
+          <p className="mt-5 text-xl leading-8 text-navy/80">{retreat.address}</p>
+          <p className="mt-5 text-lg leading-8 text-navy/75">
+            A redwood retreat setting in Aptos, offering a peaceful atmosphere for prayer,
+            reflection, and shared fellowship across the weekend.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href={retreat.venueUrl}
+              className="rounded-full bg-navy px-6 py-3 text-base font-semibold text-white hover:bg-saffron"
+            >
+              View venue
+            </Link>
+            <Link
+              href={retreat.mapUrl}
+              className="rounded-full border border-navy/15 bg-white px-6 py-3 text-base font-semibold text-navy hover:border-saffron/40 hover:text-saffron"
+            >
+              Open map
+            </Link>
+          </div>
+        </section>
+
+        <section id="registration" className="card p-8 sm:p-10">
+          <p className="pill">Registration</p>
+          <h2 className="section-title mt-5">Ready for final registration details</h2>
+          <p className="mt-5 text-lg leading-8 text-navy/75">
+            This draft is prepared for pricing, registration form links, lodging details,
+            and support contacts once the committee finalizes them.
+          </p>
+          <div className="mt-8 grid gap-4 sm:grid-cols-3">
+            {contacts.map((contact) => (
+              <div key={contact.title} className="rounded-[1.75rem] bg-rose/55 p-5">
+                <p className="text-sm uppercase tracking-[0.18em] text-saffron">
+                  {contact.title}
+                </p>
+                <p className="mt-3 text-lg font-semibold leading-7">{contact.detail}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      </section>
+
+      <section className="page-shell py-8">
+        <div className="card p-8 sm:p-10">
+          <p className="pill">Frequently Asked</p>
+          <div className="mt-6 grid gap-4">
+            {faqs.slice(0, 3).map((faq) => (
+              <div key={faq.question} className="rounded-[1.5rem] border border-navy/10 bg-white p-6">
+                <h3 className="text-2xl font-semibold">{faq.question}</h3>
+                <p className="mt-3 text-lg leading-8 text-navy/75">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

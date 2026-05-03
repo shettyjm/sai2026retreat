@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-sand text-navy antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), transparent 35%),
+    linear-gradient(180deg, #f8f2e8 0%, #f6efe1 55%, #fcfaf6 100%);
+}
+
+a,
+button {
+  @apply transition duration-200;
+}
+
+.page-shell {
+  @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-navy sm:text-4xl;
+}
+
+.section-copy {
+  @apply max-w-3xl text-lg leading-8 text-navy/80 sm:text-xl;
+}
+
+.card {
+  @apply rounded-[2rem] border border-white/70 bg-white/80 shadow-glow backdrop-blur;
+}
+
+.pill {
+  @apply inline-flex items-center rounded-full border border-saffron/30 bg-white/90 px-4 py-2 text-sm font-medium tracking-[0.15em] text-saffron uppercase;
+}

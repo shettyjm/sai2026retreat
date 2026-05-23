@@ -2,6 +2,7 @@ export type AgendaItem = {
   time: string;
   title: string;
   note?: string;
+  icon: string;
 };
 
 export type AgendaDay = {
@@ -84,10 +85,10 @@ export const agenda: AgendaDay[] = [
     date: "August 21, 2026",
     summary: "Arrival, settling in, devotional opening, and fellowship.",
     items: [
-      { time: "6:00 PM", title: "Arrival and check-in" },
-      { time: "6:45 PM", title: "Dinner" },
-      { time: "8:00 PM", title: "Outdoor firepit gathering", note: "Weather permitting" },
-      { time: "9:00 PM", title: "Devotional offering and quiet close" },
+      { time: "6:00 PM", title: "Arrival and check-in", icon: "🎒" },
+      { time: "6:45 PM", title: "Dinner", icon: "🍽️" },
+      { time: "8:00 PM", title: "Outdoor firepit gathering", note: "Weather permitting", icon: "🔥" },
+      { time: "9:00 PM", title: "Devotional offering and quiet close", icon: "🪔" },
     ],
   },
   {
@@ -96,20 +97,20 @@ export const agenda: AgendaDay[] = [
     date: "August 22, 2026",
     summary: "The fullest retreat day with practice, learning, reflection, and evening offering.",
     items: [
-      { time: "6:00 AM", title: "Suprabatham" },
-      { time: "6:30 AM", title: "Nagar Sankirtan" },
-      { time: "7:15 AM", title: "Yoga, nature walk, or fireball activity" },
-      { time: "8:00 AM", title: "Breakfast" },
-      { time: "9:00 AM", title: "Check-in continuation and welcome flow" },
-      { time: "10:00 AM", title: "Devotional offering" },
-      { time: "11:00 AM", title: "Speaker session" },
-      { time: "12:30 PM", title: "Lunch" },
-      { time: "2:00 PM", title: "Workshops" },
-      { time: "3:30 PM", title: "1:1 with Swami or reflection experience" },
-      { time: "4:30 PM", title: "Tea break" },
-      { time: "5:15 PM", title: "Stories of unconditional love" },
-      { time: "6:30 PM", title: "Dinner" },
-      { time: "8:00 PM", title: "Young adult offering" },
+      { time: "6:00 AM", title: "Suprabatham", icon: "🌅" },
+      { time: "6:30 AM", title: "Nagar Sankirtan", icon: "🎶" },
+      { time: "7:15 AM", title: "Yoga, nature walk, or fireball activity", icon: "🧘" },
+      { time: "8:00 AM", title: "Breakfast", icon: "🥣" },
+      { time: "9:00 AM", title: "Check-in continuation and welcome flow", icon: "👋" },
+      { time: "10:00 AM", title: "Devotional offering", icon: "🪔" },
+      { time: "11:00 AM", title: "Speaker session", icon: "🎤" },
+      { time: "12:30 PM", title: "Lunch", icon: "🍽️" },
+      { time: "2:00 PM", title: "Workshops", icon: "🛠️" },
+      { time: "3:30 PM", title: "1:1 with Swami or reflection experience", icon: "🙏" },
+      { time: "4:30 PM", title: "Tea break", icon: "☕" },
+      { time: "5:15 PM", title: "Stories of unconditional love", icon: "💗" },
+      { time: "6:30 PM", title: "Dinner", icon: "🍽️" },
+      { time: "8:00 PM", title: "Young adult offering", icon: "🌟" },
     ],
   },
   {
@@ -118,24 +119,24 @@ export const agenda: AgendaDay[] = [
     date: "August 23, 2026",
     summary: "Prayerful closing with speaker reflection, workshops, and departure.",
     items: [
-      { time: "6:00 AM", title: "Suprabatham" },
-      { time: "6:30 AM", title: "Nagar Sankirtan" },
-      { time: "7:15 AM", title: "Nature walk or fireball activity" },
-      { time: "8:00 AM", title: "Breakfast" },
-      { time: "9:00 AM", title: "Devotional offering" },
-      { time: "10:00 AM", title: "Speaker session" },
-      { time: "11:15 AM", title: "Q&A with speakers" },
-      { time: "12:30 PM", title: "Lunch" },
-      { time: "1:30 PM", title: "Workshops" },
-      { time: "3:00 PM", title: "Closing prayer" },
-      { time: "4:00 PM", title: "Departure" },
+      { time: "6:00 AM", title: "Suprabatham", icon: "🌅" },
+      { time: "6:30 AM", title: "Nagar Sankirtan", icon: "🎶" },
+      { time: "7:15 AM", title: "Nature walk or fireball activity", icon: "🌳" },
+      { time: "8:00 AM", title: "Breakfast", icon: "🥣" },
+      { time: "9:00 AM", title: "Devotional offering", icon: "🪔" },
+      { time: "10:00 AM", title: "Speaker session", icon: "🎤" },
+      { time: "11:15 AM", title: "Q&A with speakers", icon: "❓" },
+      { time: "12:30 PM", title: "Lunch", icon: "🍽️" },
+      { time: "1:30 PM", title: "Workshops", icon: "🛠️" },
+      { time: "3:00 PM", title: "Closing prayer", icon: "🙏" },
+      { time: "4:00 PM", title: "Departure", icon: "🚗" },
     ],
   },
 ];
 
 import type { StaticImageData } from "next/image";
 
-import aparnaMurali from "@/AparnaMurali.jpeg";
+import aparnaMurali from "@/assets/AparnaMurali.jpeg";
 
 export type Speaker = {
   name: string;

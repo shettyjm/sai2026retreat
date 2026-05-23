@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import heroBanner from "@/herobanner.png";
+import heroBanner from "@/assets/herobanner.png";
 
 export function PageBanner() {
   return (

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { AgendaNav } from "@/components/agenda-nav";
-import heroBanner from "@/herobanner.png";
+import heroBanner from "@/assets/herobanner.png";
 import {
   agenda,
   contacts,
@@ -174,11 +174,16 @@ export default function HomePage() {
                 <p className="mt-3 text-lg leading-8 text-navy/75">{day.summary}</p>
                 <div className="mt-5 space-y-3">
                   {day.items.slice(0, 4).map((item) => (
-                    <div key={`${day.id}-${item.time}`} className="rounded-2xl bg-sand p-4">
-                      <p className="text-sm font-semibold uppercase tracking-[0.16em] text-saffron">
-                        {item.time}
-                      </p>
-                      <p className="mt-2 text-xl font-semibold leading-8">{item.title}</p>
+                    <div key={`${day.id}-${item.time}`} className="flex items-center gap-3 rounded-2xl bg-sand p-4">
+                      <span aria-hidden="true" className="text-3xl shrink-0">
+                        {item.icon}
+                      </span>
+                      <div className="min-w-0">
+                        <p className="text-sm font-semibold uppercase tracking-[0.16em] text-saffron">
+                          {item.time}
+                        </p>
+                        <p className="mt-1 text-xl font-semibold leading-7">{item.title}</p>
+                      </div>
                     </div>
                   ))}
                 </div>

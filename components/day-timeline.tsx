@@ -18,10 +18,18 @@ export function DayTimeline({ day }: DayTimelineProps) {
             {day.items.map((item) => (
               <article
                 key={`${day.id}-${item.time}-${item.title}`}
-                className="grid gap-4 rounded-[1.75rem] border border-navy/10 bg-white p-5 sm:grid-cols-[10rem,1fr] sm:items-center sm:p-6"
+                className="flex flex-col gap-4 rounded-[1.75rem] border border-navy/10 bg-white p-5 sm:flex-row sm:items-center sm:p-6"
               >
-                <div className="text-2xl font-semibold text-saffron">{item.time}</div>
-                <div>
+                <div
+                  aria-hidden="true"
+                  className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sand text-3xl shadow-sm sm:h-16 sm:w-16 sm:text-4xl"
+                >
+                  {item.icon}
+                </div>
+                <div className="w-40 shrink-0 text-2xl font-semibold text-saffron">
+                  {item.time}
+                </div>
+                <div className="flex-1">
                   <h3 className="text-2xl font-semibold text-navy sm:text-[1.8rem]">
                     {item.title}
                   </h3>

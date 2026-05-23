@@ -2,3 +2,13 @@
 node_modules
 .vercel
 .DS_Store
+
+# Build artifacts
+tsconfig.tsbuildinfo
+
+# Design feedback screenshots — not production assets
+BadBannerTextCardPosition.png
+HeroBannerCutOff.png
+bannertextndentation.png
+missingspacing.png
+repalcewithlogo.png

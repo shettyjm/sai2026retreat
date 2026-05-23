@@ -8,6 +8,17 @@
 
 html {
   scroll-behavior: smooth;
+  /* +20% type scale for senior readability — all rem-based Tailwind sizes inherit */
+  font-size: 120%;
+}
+
+/* Heavier weight on every heading and primary nav link — senior accessibility */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+header nav a {
+  font-weight: 700;
 }
 
 body {
@@ -27,7 +38,7 @@ button {
 }
 
 .section-title {
-  @apply text-3xl font-semibold tracking-tight text-navy sm:text-4xl;
+  @apply text-3xl font-bold tracking-tight text-navy sm:text-4xl;
 }
 
 .section-copy {

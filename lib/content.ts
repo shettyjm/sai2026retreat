@@ -20,13 +20,53 @@ export const retreat = {
   venue: "Monte Toyon Camp & Conference Center",
   address: "220 Cloister Lane, Aptos, CA 95003",
   venueUrl: "https://www.uccr.org/monte-toyon",
-  registrationUrl: "#registration",
+  registrationUrl: "/registration",
+  cognitoFormUrl:
+    "https://www.cognitoforms.com/SSIOUSARegion7AnnualRetreat/RegistrationForSSSIOUSARegion743rdAnnualRegionalRetreat2026",
+  registrationEmail: "reg7retreat@gmail.com",
+  registrationPhone: "650-641-0059",
   mapUrl: "https://maps.google.com/?q=220+Cloister+Lane+Aptos+CA+95003",
   logoUrl:
     "https://region7saicenters.org/region7new/retreat/assets/images/ssio-logo.png",
   heroImageUrl:
     "https://region7saicenters.org/region7new/retreat/assets/images/swami2025.jpg",
 };
+
+export const lodgingOptions = [
+  {
+    title: "Semi-Private Lodges",
+    description: "No semi-private lodges at this location.",
+  },
+  {
+    title: "Cabins / Dorms",
+    description:
+      "Dormitory-style accommodations include a variety of room configurations that sleep 4, 6, and 8 guests. Sleeping arrangements feature twin-size wooden bunk beds. Bathrooms are separated for men and women and include multiple toilets, sinks, and private shower stalls. Men and women will be housed in separate rooms, as family dormitories are not available. Boys will room with their fathers, and girls will room with their mothers. Guests should bring their own bedding, including sheets or sleeping bags, pillows, and towels.",
+  },
+  {
+    title: "Day Use",
+    description:
+      "For people who will attend the retreat for 1 or 2 days with no overnight staying onsite.",
+  },
+];
+
+export type PricingRow = {
+  ageGroup: string;
+  overnight: string;
+  oneDay: string;
+  twoDay: string;
+};
+
+export const pricingRows: PricingRow[] = [
+  { ageGroup: "5 and under", overnight: "$0", oneDay: "$0", twoDay: "$0" },
+  { ageGroup: "6 through 11", overnight: "$120", oneDay: "$57", twoDay: "$113" },
+  { ageGroup: "12 and Up", overnight: "$194", oneDay: "$91", twoDay: "$182" },
+];
+
+export const registrationNotes = [
+  "Registration for the entire retreat includes lodging for one night, two breakfasts, two lunches, and two dinners.",
+  '"Day Use - Sat" includes breakfast, lunch, and dinner.',
+  '"Day Use - Sun" includes breakfast, lunch, and dinner.',
+];
 
 export const highlights = [
   "Devotional offerings and spiritual fellowship",
@@ -93,21 +133,28 @@ export const agenda: AgendaDay[] = [
   },
 ];
 
-export const speakers = [
+import type { StaticImageData } from "next/image";
+
+import aparnaMurali from "@/AparnaMurali.jpeg";
+
+export type Speaker = {
+  name: string;
+  role: string;
+  bio: string;
+  image?: StaticImageData;
+};
+
+export const speakers: Speaker[] = [
   {
-    name: "Speaker to be announced",
-    role: "Retreat keynote",
-    bio: "Placeholder profile for the main retreat speaker. This section is ready to swap in final names, bios, and photos later.",
+    name: "Alex Grana",
+    role: "Retreat speaker",
+    bio: "Brother Alex Grana delivered an enlightening talk, which began with a visualization of how this opportunity to serve in His mission is a once-in-a-billion-year opportunity that we have acquired after so many births. This visualization drove home the gravity of this incredible opportunity to serve in Swami's mission and to be the descendants of this Avatar who are tasked with carrying out His message. Brother Alex shared a simple but beautiful anecdote of how this leadership opportunity was akin to us putting in the effort to switch on the fan — a switch that makes one realize His ever-present bountiful grace (the fan in the anecdote) can bring so much joy and bliss (cooling breeze) to the seeker or devotee. Brother Alex also shared learnings from his journey and experiences as a leader. His insights resonated with participants, providing valuable perspectives on leadership and its deeply intertwined connection to spirituality.",
   },
   {
-    name: "Panelist to be announced",
-    role: "Workshop facilitator",
-    bio: "Use this card area for workshop leaders, moderators, and devotional contributors as details are finalized.",
-  },
-  {
-    name: "Young adult speaker to be announced",
-    role: "YA session",
-    bio: "A dedicated card is included so the young adult program can remain visible as part of the overall retreat experience.",
+    name: "Aparna Murali",
+    role: "Retreat speaker",
+    bio: "Aparna Murali is deeply grateful for the blessing of being born into a family devoted to Bhagawan since the early 1960s. While Balvikas laid a strong foundation for loving God, it was the three transformative years spent living as His student that profoundly shaped her spiritual journey. She feels blessed to have had the opportunity to serve at all levels of the SSSIO — Center, Regional, National, Zonal, and International. She currently serves as a member of the SSSIO Education Committee and as the Zone 1 Education Coordinator. Among all her roles, the one she cherishes the most is being part of SSE as a perpetual learner.\n\nProfessionally, Aparna works in the Department of Obstetrics and Gynecology at UCLA as a Reproductive Genetic Counselor. In addition to her clinical practice, she is actively involved in teaching and mentorship, serving as faculty and clinical supervisor for UCLA's Graduate Program in Genetic Counseling, where she shares her knowledge and passion with the next generation of counselors.",
+    image: aparnaMurali,
   },
 ];
 

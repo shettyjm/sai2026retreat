@@ -13,21 +13,21 @@ import {
 
 function ThemeWordmark() {
   return (
-    <div className="mt-6 space-y-4">
-      <div className="space-y-2">
-        <div className="text-4xl font-semibold tracking-tight text-white sm:text-5xl lg:text-6xl">
+    <div className="mt-5 space-y-3">
+      <div className="space-y-1">
+        <div className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
           Be The
         </div>
-        <div className="text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">
-          <span className="text-sunset">S</span>
+        <div className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+          <span className="text-saffron">S</span>
           <span className="text-white">piritual </span>
-          <span className="text-sunset">A</span>
+          <span className="text-saffron">A</span>
           <span className="text-white">thlete </span>
-          <span className="text-sunset">I</span>
+          <span className="text-saffron">I</span>
           <span className="text-white">nside</span>
         </div>
       </div>
-      <p className="text-base font-semibold uppercase tracking-[0.24em] text-white/80 sm:text-lg">
+      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/80 sm:text-base">
         Highlighting the inner call of S A I
       </p>
     </div>
@@ -39,22 +39,20 @@ export default function HomePage() {
     <main className="pb-16">
       <section className="page-shell py-10 lg:py-16">
         <div className="card overflow-hidden">
-          <div className="relative aspect-[16/6] min-h-[260px] w-full sm:min-h-[320px] lg:min-h-[420px]">
+          <div className="relative aspect-[16/7] min-h-[280px] w-full sm:min-h-[360px] lg:min-h-[480px]">
             <Image
               src={heroBanner}
               alt="Region 7 Sai Retreat hero banner"
               fill
               priority
               className="object-cover"
+              style={{ objectPosition: "20% 35%" }}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy/18 to-navy/70" />
-            <div className="absolute inset-x-0 bottom-0 flex justify-end p-6 sm:p-8 lg:justify-center lg:px-24 lg:py-10">
-              <div className="max-w-3xl rounded-[2rem] border border-white/25 bg-white/14 p-5 text-white backdrop-blur-md sm:p-7">
-                <p className="pill border-white/20 bg-white/20 text-white">August 21 to 23, 2026</p>
-                <p className="mt-5 text-lg font-medium uppercase tracking-[0.28em] text-sunset sm:text-xl">
-                  Retreat Theme
-                </p>
-                <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+            <div className="absolute inset-x-0 bottom-0 flex justify-end p-6 sm:p-8 lg:inset-y-6 lg:bottom-6 lg:left-auto lg:right-[11%] lg:w-[55%] lg:items-center lg:p-0">
+              <div className="w-full max-w-3xl rounded-[2rem] border border-white/25 bg-white/14 p-5 text-white backdrop-blur-md sm:p-7 lg:max-w-none lg:p-7">
+                <p className="pill border-sunset bg-sunset text-navy font-black">August 21 to 23, 2026</p>
+                <h1 className="mt-5 max-w-4xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
                   {retreat.name}
                 </h1>
                 <ThemeWordmark />
@@ -130,7 +128,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="page-shell grid gap-8 pb-8 lg:grid-cols-[1.2fr,0.8fr]">
+      <section className="page-shell grid gap-8 pb-8 pt-10 lg:grid-cols-[1.2fr,0.8fr] lg:pt-14">
         <div className="space-y-8">
           <section className="card p-8 sm:p-10">
             <p className="pill">Theme</p>

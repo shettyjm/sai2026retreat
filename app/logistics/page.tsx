@@ -1,10 +1,13 @@
 import Link from "next/link";
 
+import { PageBanner } from "@/components/page-banner";
 import { logistics, retreat } from "@/lib/content";
 
 export default function LogisticsPage() {
   return (
-    <main className="page-shell py-10 lg:py-14">
+    <>
+      <PageBanner />
+      <main className="page-shell py-10 lg:py-14">
       <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr]">
         <section className="card p-8 sm:p-10">
           <p className="pill">Logistics</p>
@@ -44,6 +47,7 @@ export default function LogisticsPage() {
           </div>
         </section>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

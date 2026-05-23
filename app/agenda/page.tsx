@@ -1,10 +1,13 @@
 import { AgendaNav } from "@/components/agenda-nav";
 import { DayTimeline } from "@/components/day-timeline";
+import { PageBanner } from "@/components/page-banner";
 import { agenda } from "@/lib/content";
 
 export default function AgendaPage() {
   return (
-    <main className="page-shell grid gap-8 py-10 lg:grid-cols-[0.8fr,1.45fr] lg:py-14">
+    <>
+      <PageBanner />
+      <main className="page-shell grid gap-8 py-10 lg:grid-cols-[0.8fr,1.45fr] lg:py-14">
       <div className="lg:order-2">
         <div className="mb-8 card p-8 sm:p-10">
           <p className="pill">Full Program Agenda</p>
@@ -25,6 +28,7 @@ export default function AgendaPage() {
       <div className="lg:order-1">
         <AgendaNav />
       </div>
-    </main>
+      </main>
+    </>
   );
 }

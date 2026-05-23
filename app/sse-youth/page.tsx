@@ -1,8 +1,11 @@
+import { PageBanner } from "@/components/page-banner";
 import { youthNotes } from "@/lib/content";
 
 export default function SseYouthPage() {
   return (
-    <main className="page-shell py-10 lg:py-14">
+    <>
+      <PageBanner />
+      <main className="page-shell py-10 lg:py-14">
       <div className="card p-8 sm:p-10">
         <p className="pill">SSE / Youth</p>
         <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -23,6 +26,7 @@ export default function SseYouthPage() {
           ))}
         </div>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

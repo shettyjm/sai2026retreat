@@ -1,8 +1,11 @@
+import { PageBanner } from "@/components/page-banner";
 import { faqs } from "@/lib/content";
 
 export default function FaqPage() {
   return (
-    <main className="page-shell py-10 lg:py-14">
+    <>
+      <PageBanner />
+      <main className="page-shell py-10 lg:py-14">
       <div className="card p-8 sm:p-10">
         <p className="pill">FAQ</p>
         <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
@@ -17,6 +20,7 @@ export default function FaqPage() {
           ))}
         </div>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

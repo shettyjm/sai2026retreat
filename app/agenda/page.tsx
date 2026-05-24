@@ -12,7 +12,7 @@ export default function AgendaPage() {
         <div className="mb-8 card p-8 sm:p-10">
           <p className="pill">Program</p>
           <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-            Walk through the retreat one day at a time
+            Walk through of the Retreat One Day at a Time
           </h1>
           <p className="mt-5 max-w-3xl text-xl leading-9 text-navy/78">
             Each day is presented as a large, easy-to-scan timeline so families, elders, and

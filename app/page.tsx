@@ -5,7 +5,6 @@ import { AgendaNav } from "@/components/agenda-nav";
 import heroBanner from "@/assets/herobanner.png";
 import {
   agenda,
-  contacts,
   faqs,
   retreat,
 } from "@/lib/content";
@@ -178,7 +177,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="page-shell grid gap-8 py-8 lg:grid-cols-[1fr,1fr]">
+      <section className="page-shell py-8">
         <section className="card p-8 sm:p-10">
           <p className="pill">Location</p>
           <h2 className="section-title mt-5">{retreat.venue}</h2>
@@ -200,25 +199,6 @@ export default function HomePage() {
             >
               Open map
             </Link>
-          </div>
-        </section>
-
-        <section id="registration" className="card p-8 sm:p-10">
-          <p className="pill">Registration</p>
-          <h2 className="section-title mt-5">Ready for final registration details</h2>
-          <p className="mt-5 text-lg leading-8 text-navy/75">
-            This draft is prepared for pricing, registration form links, lodging details,
-            and support contacts once the committee finalizes them.
-          </p>
-          <div className="mt-8 grid gap-4 sm:grid-cols-3">
-            {contacts.map((contact) => (
-              <div key={contact.title} className="rounded-[1.75rem] bg-rose/55 p-5">
-                <p className="text-sm uppercase tracking-[0.18em] text-saffron">
-                  {contact.title}
-                </p>
-                <p className="mt-3 text-lg font-semibold leading-7">{contact.detail}</p>
-              </div>
-            ))}
           </div>
         </section>
       </section>

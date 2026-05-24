@@ -6,9 +6,15 @@ import Image from "next/image";
 
 import { retreat } from "@/lib/content";
 
-const navItems = [
+type NavItem = {
+  href: string;
+  label: string;
+  disabled?: boolean;
+};
+
+const navItems: NavItem[] = [
   { href: "/", label: "Home" },
-  { href: "/agenda", label: "Program" },
+  { href: "/agenda", label: "Program", disabled: true },
   { href: "/speakers", label: "Speakers" },
   { href: "/logistics", label: "Communication" },
   { href: "/sse-youth", label: "SSE" },
@@ -18,6 +24,9 @@ const navItems = [
 
 const pillClasses =
   "rounded-full border border-rose/60 bg-rose/70 font-bold text-navy hover:border-saffron/50 hover:bg-rose hover:text-saffron";
+
+const disabledPillClasses =
+  "rounded-full border border-navy/15 bg-navy/5 font-bold text-navy/40 cursor-not-allowed";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -52,30 +61,53 @@ export function SiteHeader() {
           </button>
 
           <nav className="hidden flex-wrap gap-2 lg:flex">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                className={`${pillClasses} px-7 py-3.5 text-xl`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.disabled ? (
+                <span
+                  key={item.href}
+                  aria-disabled="true"
+                  title="Coming soon — program is being finalized"
+                  className={`${disabledPillClasses} px-7 py-3.5 text-xl`}
+                >
+                  {item.label}
+                  <span aria-hidden="true" className="ml-2 text-base">🔒</span>
+                </span>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className={`${pillClasses} px-7 py-3.5 text-xl`}
+                >
+                  {item.label}
+                </Link>
+              ),
+            )}
           </nav>
         </div>
 
         {open && (
           <nav className="mt-3 flex flex-col gap-2 lg:hidden">
-            {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setOpen(false)}
-                className={`${pillClasses} block px-5 py-3 text-center text-lg`}
-              >
-                {item.label}
-              </Link>
-            ))}
+            {navItems.map((item) =>
+              item.disabled ? (
+                <span
+                  key={item.href}
+                  aria-disabled="true"
+                  className={`${disabledPillClasses} block px-5 py-3 text-center text-lg`}
+                >
+                  {item.label}
+                  <span aria-hidden="true" className="ml-2 text-base">🔒</span>
+                </span>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setOpen(false)}
+                  className={`${pillClasses} block px-5 py-3 text-center text-lg`}
+                >
+                  {item.label}
+                </Link>
+              ),
+            )}
           </nav>
         )}
       </div>

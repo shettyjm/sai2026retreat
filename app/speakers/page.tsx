@@ -10,9 +10,6 @@ export default function SpeakersPage() {
       <main className="page-shell py-10 lg:py-14">
       <div className="card p-8 sm:p-10">
         <p className="pill">Speakers</p>
-        <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Voices guiding this year&apos;s retreat
-        </h1>
         <p className="mt-5 max-w-3xl text-xl leading-9 text-navy/78">
           Meet the speakers joining us at Monte Toyon. Additional speakers and workshop
           facilitators will be added as they are confirmed.

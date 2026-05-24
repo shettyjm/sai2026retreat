@@ -65,10 +65,9 @@ export default function HomePage() {
         <div className="card relative overflow-hidden p-8 sm:p-10 lg:p-12">
           <div className="absolute inset-0 bg-halo opacity-80" />
           <div className="relative">
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-navy/78 sm:text-xl">
-              A warm, peaceful weekend in the redwoods designed for spiritual practice,
-              fellowship, learning, and family participation.
-            </p>
+            <h2 className="mt-6 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
+              Retreat Details
+            </h2>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
                 href={retreat.registrationUrl}

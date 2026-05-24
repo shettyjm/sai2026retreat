@@ -12,7 +12,7 @@ export default function LogisticsPage() {
         <section className="card p-8 sm:p-10">
           <p className="pill">Communication</p>
           <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
-            Important retreat information in one place
+            Important retreat information
           </h1>
           <div className="mt-8 grid gap-4">
             {logistics.map((item) => (

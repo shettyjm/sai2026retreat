@@ -84,15 +84,15 @@ export default function HomePage() {
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
               <div className="rounded-[1.5rem] bg-white/90 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-saffron">When</p>
+                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Date:</p>
                 <p className="mt-3 text-xl font-semibold leading-8">{retreat.dates}</p>
               </div>
               <div className="rounded-[1.5rem] bg-white/90 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Time</p>
+                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Time:</p>
                 <p className="mt-3 text-xl font-semibold leading-8">{retreat.timeWindow}</p>
               </div>
               <div className="rounded-[1.5rem] bg-white/90 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Where</p>
+                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Venue:</p>
                 <p className="mt-3 text-xl font-semibold leading-8">{retreat.venue}</p>
               </div>
             </div>

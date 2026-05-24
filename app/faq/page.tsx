@@ -7,7 +7,7 @@ export default function FaqPage() {
       <PageBanner />
       <main className="page-shell py-10 lg:py-14">
       <div className="card p-8 sm:p-10">
-        <p className="pill">FAQ</p>
+        <p className="pill">Contacts</p>
         <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
           Practical answers for first-time and returning attendees
         </h1>

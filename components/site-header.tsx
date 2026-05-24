@@ -12,7 +12,7 @@ const navItems = [
   { href: "/speakers", label: "Speakers" },
   { href: "/logistics", label: "Communication" },
   { href: "/sse-youth", label: "SSE" },
-  { href: "/faq", label: "FAQ" },
+  { href: "/faq", label: "Contacts" },
   { href: "/registration", label: "Register" },
 ];
 

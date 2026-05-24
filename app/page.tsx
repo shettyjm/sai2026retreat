@@ -67,21 +67,7 @@ export default function HomePage() {
             <h2 className="mt-6 text-3xl font-bold tracking-tight text-navy sm:text-4xl">
               Retreat Details
             </h2>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href={retreat.registrationUrl}
-                className="rounded-full bg-navy px-6 py-4 text-lg font-semibold text-white hover:bg-saffron"
-              >
-                Register
-              </Link>
-              <Link
-                href="/agenda"
-                className="rounded-full border border-navy/15 bg-white px-6 py-4 text-lg font-semibold text-navy hover:border-saffron/40 hover:text-saffron"
-              >
-                View full program
-              </Link>
-            </div>
-            <div className="mt-10 grid gap-4 sm:grid-cols-3">
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
               <div className="rounded-[1.5rem] bg-white/90 p-5">
                 <p className="text-sm uppercase tracking-[0.2em] text-saffron">Date:</p>
                 <p className="mt-3 text-xl font-semibold leading-8">{retreat.dates}</p>

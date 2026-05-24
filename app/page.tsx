@@ -17,10 +17,10 @@ function ThemeWordmark() {
         Theme:
       </p>
       <div className="space-y-1">
-        <div className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
+        <div className="text-[1.7rem] font-semibold tracking-tight text-white sm:text-[2rem] lg:text-[2.7rem]">
           Be The
         </div>
-        <div className="text-4xl font-semibold tracking-tight sm:text-5xl lg:text-6xl">
+        <div className="text-[2rem] font-semibold tracking-tight sm:text-[2.7rem] lg:text-[3.4rem]">
           <span className="text-saffron">S</span>
           <span className="text-white">piritual </span>
           <span className="text-saffron">A</span>
@@ -29,6 +29,9 @@ function ThemeWordmark() {
           <span className="text-white">nside</span>
         </div>
       </div>
+      <p className="pt-2 text-sm font-semibold tracking-wide text-white/85 sm:text-base">
+        August 21 to 23, 2026
+      </p>
     </div>
   );
 }
@@ -113,11 +116,23 @@ export default function HomePage() {
           <section className="card p-8 sm:p-10">
             <p className="pill">Theme</p>
             <h2 className="section-title mt-5">{retreat.theme}</h2>
-            <p className="section-copy mt-5">
-              This theme invites devotees to think of spiritual life as steady inner
-              training: discipline with love, devotion with purpose, service with humility,
-              and transformation that reaches everyday life.
-            </p>
+            <div className="mt-5 max-w-3xl space-y-5 text-lg leading-8 text-navy/80 sm:text-xl">
+              <p>
+                <span className="font-semibold text-navy">Spiritual Athlete Inside (SAI)</span>{" "}
+                is someone who uses every role, every action, and every moment of life as a
+                disciplined practice to realize their inner divinity and live in a state of
+                peace and bliss.
+              </p>
+              <p>
+                A spiritual athlete uses every moment of life to act with excellence, live
+                with values, and realize their inner divinity.
+              </p>
+              <p>
+                To be a spiritual athlete is to turn life into a sacred training ground—where
+                every action refines you, every challenge strengthens you, and every moment
+                brings you closer to your true self.
+              </p>
+            </div>
           </section>
 
         </div>

@@ -17,7 +17,7 @@ const navItems: NavItem[] = [
   { href: "/agenda", label: "Program", disabled: true },
   { href: "/speakers", label: "Speakers" },
   { href: "/logistics", label: "Communication" },
-  { href: "/sse-youth", label: "SSE" },
+  { href: "/sse-youth", label: "SSE", disabled: true },
   { href: "/faq", label: "Contacts" },
   { href: "/registration", label: "Register" },
 ];

@@ -54,8 +54,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy/18 to-navy/70" />
             <div className="absolute inset-x-0 bottom-0 flex justify-end p-6 sm:p-8 lg:inset-y-6 lg:bottom-6 lg:left-auto lg:right-[11%] lg:w-[55%] lg:items-center lg:p-0">
               <div className="w-full max-w-3xl rounded-[2rem] border border-white/25 bg-white/14 p-5 text-white backdrop-blur-md sm:p-7 lg:max-w-none lg:p-7">
-                <p className="pill border-sunset bg-sunset text-navy font-black">August 21 to 23, 2026</p>
-                <h1 className="mt-5 max-w-4xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                <h1 className="max-w-4xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
                   43rd Annual Regional (Region 7) Retreat
                 </h1>
                 <ThemeWordmark />

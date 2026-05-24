@@ -11,15 +11,15 @@ import {
 
 function ThemeWordmark() {
   return (
-    <div className="mt-5 space-y-3">
+    <div className="mt-8 space-y-4">
       <p className="text-sm font-bold uppercase tracking-[0.24em] text-sunset sm:text-base">
         Theme:
       </p>
-      <div className="space-y-1">
-        <div className="text-[1.7rem] font-semibold tracking-tight text-white sm:text-[2rem] lg:text-[2.7rem]">
+      <div className="space-y-2">
+        <div className="text-[1.2rem] font-semibold tracking-tight text-white sm:text-[1.4rem] lg:text-[1.9rem]">
           Be The
         </div>
-        <div className="text-[2rem] font-semibold tracking-tight sm:text-[2.7rem] lg:text-[3.4rem]">
+        <div className="text-[1.4rem] font-semibold tracking-tight sm:text-[1.9rem] lg:text-[2.4rem]">
           <span className="text-saffron">S</span>
           <span className="text-white">piritual </span>
           <span className="text-saffron">A</span>
@@ -28,7 +28,7 @@ function ThemeWordmark() {
           <span className="text-white">nside</span>
         </div>
       </div>
-      <p className="pt-2 text-sm font-semibold tracking-wide text-white/85 sm:text-base">
+      <p className="pt-3 text-sm font-semibold tracking-wide text-white/85 sm:text-base">
         August 21 to 23, 2026
       </p>
     </div>
@@ -52,7 +52,7 @@ export default function HomePage() {
             <div className="absolute inset-0 bg-gradient-to-r from-transparent via-navy/18 to-navy/70" />
             <div className="absolute inset-x-0 bottom-0 flex justify-end p-6 sm:p-8 lg:inset-y-6 lg:bottom-6 lg:left-auto lg:right-[11%] lg:w-[55%] lg:items-center lg:p-0">
               <div className="w-full max-w-3xl rounded-[2rem] border border-white/25 bg-white/14 p-5 text-white backdrop-blur-md sm:p-7 lg:max-w-none lg:p-7">
-                <h1 className="max-w-4xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
+                <h1 className="max-w-4xl text-4xl font-black tracking-tight sm:text-5xl lg:text-6xl">
                   43rd Annual Regional (Region 7) Retreat
                 </h1>
                 <ThemeWordmark />

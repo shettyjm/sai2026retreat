@@ -8,10 +8,10 @@ import { retreat } from "@/lib/content";
 
 const navItems = [
   { href: "/", label: "Home" },
-  { href: "/agenda", label: "Agenda" },
+  { href: "/agenda", label: "Program" },
   { href: "/speakers", label: "Speakers" },
-  { href: "/logistics", label: "Logistics" },
-  { href: "/sse-youth", label: "SSE / Youth" },
+  { href: "/logistics", label: "Communication" },
+  { href: "/sse-youth", label: "SSE" },
   { href: "/faq", label: "FAQ" },
   { href: "/registration", label: "Register" },
 ];

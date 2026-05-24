@@ -74,7 +74,7 @@ export const highlights = [
   "Speaker sessions centered on discipline, love, and inner transformation",
   "Workshops, reflection spaces, and quiet nature moments",
   "Dedicated SSE and young adult programming",
-  "Family-friendly rhythm with clear access to each day’s agenda",
+  "Family-friendly rhythm with clear access to each day’s program",
   "A peaceful redwood setting for prayer, service, and renewal",
 ];
 
@@ -188,12 +188,12 @@ export const faqs = [
   {
     question: "Is food included?",
     answer:
-      "Meal timing is built into the draft agenda. Final meal and dietary accommodation details can be added once registration details are confirmed.",
+      "Meal timing is built into the draft program. Final meal and dietary accommodation details can be added once registration details are confirmed.",
   },
   {
     question: "Is this family friendly?",
     answer:
-      "Yes. The site is being structured for families, elders, and first-time attendees with large text, clear day-by-day guidance, and quick agenda access.",
+      "Yes. The site is being structured for families, elders, and first-time attendees with large text, clear day-by-day guidance, and quick program access.",
   },
   {
     question: "Will there be an SSE program?",

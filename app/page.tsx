@@ -30,9 +30,6 @@ function ThemeWordmark() {
           <span className="text-white">nside</span>
         </div>
       </div>
-      <p className="text-sm font-semibold uppercase tracking-[0.24em] text-white/80 sm:text-base">
-        Highlighting the inner call of S A I
-      </p>
     </div>
   );
 }
@@ -83,7 +80,7 @@ export default function HomePage() {
                 href="/agenda"
                 className="rounded-full border border-navy/15 bg-white px-6 py-4 text-lg font-semibold text-navy hover:border-saffron/40 hover:text-saffron"
               >
-                View full agenda
+                View full program
               </Link>
             </div>
             <div className="mt-10 grid gap-4 sm:grid-cols-3">
@@ -115,9 +112,6 @@ export default function HomePage() {
             <p className="mt-6 text-sm uppercase tracking-[0.24em] text-white/70">
               Retreat inspiration
             </p>
-            <h2 className="mt-2 text-3xl font-semibold leading-tight">
-              A devotional first draft with a clearer path through each day
-            </h2>
           </div>
           <div className="relative aspect-[4/3]">
             <Image
@@ -165,7 +159,7 @@ export default function HomePage() {
               <h2 className="section-title mt-5">A day-by-day timeline at a glance</h2>
             </div>
             <Link href="/agenda" className="text-lg font-semibold text-saffron hover:text-navy">
-              Open the full agenda
+              Open the full program
             </Link>
           </div>
           <div className="mt-8 grid gap-5 lg:grid-cols-3">

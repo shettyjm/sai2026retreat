@@ -10,7 +10,7 @@ export default function AgendaPage() {
       <main className="page-shell grid gap-8 py-10 lg:grid-cols-[0.8fr,1.45fr] lg:py-14">
       <div className="lg:order-2">
         <div className="mb-8 card p-8 sm:p-10">
-          <p className="pill">Full Program Agenda</p>
+          <p className="pill">Program</p>
           <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
             Walk through the retreat one day at a time
           </h1>

@@ -7,7 +7,7 @@ export default function SseYouthPage() {
       <PageBanner />
       <main className="page-shell py-10 lg:py-14">
       <div className="card p-8 sm:p-10">
-        <p className="pill">SSE / Youth</p>
+        <p className="pill">SSE</p>
         <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
           A clearer path for families, children, and young adults
         </h1>

@@ -5,7 +5,7 @@ import { agenda } from "@/lib/content";
 export function AgendaNav() {
   return (
     <div className="card sticky top-24 p-5">
-      <p className="pill mb-4">Agenda Access</p>
+      <p className="pill mb-4">Program Access</p>
       <h2 className="text-2xl font-semibold">Jump to any day</h2>
       <p className="mt-2 text-base leading-7 text-navy/75">
         Keep the program easy to reach from every stage of the retreat.

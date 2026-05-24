@@ -10,7 +10,7 @@ export default function LogisticsPage() {
       <main className="page-shell py-10 lg:py-14">
       <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr]">
         <section className="card p-8 sm:p-10">
-          <p className="pill">Logistics</p>
+          <p className="pill">Communication</p>
           <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
             Important retreat information in one place
           </h1>

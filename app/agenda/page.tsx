@@ -25,11 +25,11 @@ export default function AgendaPage() {
             🔒
           </p>
           <h2 className="mt-3 text-2xl font-bold text-navy sm:text-3xl">
-            Draft program — not yet approved
+            Draft Program — Yet to be finalized
           </h2>
           <p className="mt-3 mx-auto max-w-2xl text-base leading-7 text-navy/75 sm:text-lg">
             The full schedule below is a working draft and is intentionally blurred
-            until the committee finalizes and approves the program. Check back soon.
+            until the committee finalizes the program. Check back soon.
           </p>
         </div>
 

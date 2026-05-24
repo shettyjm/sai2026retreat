@@ -14,6 +14,9 @@ import {
 function ThemeWordmark() {
   return (
     <div className="mt-5 space-y-3">
+      <p className="text-sm font-bold uppercase tracking-[0.24em] text-sunset sm:text-base">
+        Theme:
+      </p>
       <div className="space-y-1">
         <div className="text-3xl font-semibold tracking-tight text-white sm:text-4xl lg:text-5xl">
           Be The
@@ -53,7 +56,7 @@ export default function HomePage() {
               <div className="w-full max-w-3xl rounded-[2rem] border border-white/25 bg-white/14 p-5 text-white backdrop-blur-md sm:p-7 lg:max-w-none lg:p-7">
                 <p className="pill border-sunset bg-sunset text-navy font-black">August 21 to 23, 2026</p>
                 <h1 className="mt-5 max-w-4xl text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl">
-                  {retreat.name}
+                  43rd Annual Regional (Region 7) Retreat
                 </h1>
                 <ThemeWordmark />
               </div>

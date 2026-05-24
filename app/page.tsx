@@ -7,7 +7,6 @@ import {
   agenda,
   contacts,
   faqs,
-  highlights,
   retreat,
 } from "@/lib/content";
 
@@ -135,16 +134,6 @@ export default function HomePage() {
             </p>
           </section>
 
-          <section className="card p-8 sm:p-10">
-            <p className="pill">Retreat Highlights</p>
-            <div className="mt-6 grid gap-4 md:grid-cols-2">
-              {highlights.map((item) => (
-                <div key={item} className="rounded-[1.75rem] bg-sky/55 p-6">
-                  <p className="text-xl font-semibold leading-8">{item}</p>
-                </div>
-              ))}
-            </div>
-          </section>
         </div>
 
         <AgendaNav />

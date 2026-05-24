@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { AgendaNav } from "@/components/agenda-nav";
 import heroBanner from "@/assets/herobanner.png";
 import {
   agenda,
@@ -110,33 +109,28 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="page-shell grid gap-8 pb-8 pt-10 lg:grid-cols-[1.2fr,0.8fr] lg:pt-14">
-        <div className="space-y-8">
-          <section className="card p-8 sm:p-10">
-            <p className="pill">Theme</p>
-            <h2 className="section-title mt-5">{retreat.theme}</h2>
-            <div className="mt-5 max-w-3xl space-y-5 text-lg leading-8 text-navy/80 sm:text-xl">
-              <p>
-                <span className="font-semibold text-navy">Spiritual Athlete Inside (SAI)</span>{" "}
-                is someone who uses every role, every action, and every moment of life as a
-                disciplined practice to realize their inner divinity and live in a state of
-                peace and bliss.
-              </p>
-              <p>
-                A spiritual athlete uses every moment of life to act with excellence, live
-                with values, and realize their inner divinity.
-              </p>
-              <p>
-                To be a spiritual athlete is to turn life into a sacred training ground—where
-                every action refines you, every challenge strengthens you, and every moment
-                brings you closer to your true self.
-              </p>
-            </div>
-          </section>
-
-        </div>
-
-        <AgendaNav />
+      <section className="page-shell pb-8 pt-10 lg:pt-14">
+        <section className="card p-8 sm:p-10">
+          <p className="pill">Theme</p>
+          <h2 className="section-title mt-5">{retreat.theme}</h2>
+          <div className="mt-5 max-w-4xl space-y-5 text-lg leading-8 text-navy/80 sm:text-xl">
+            <p>
+              <span className="font-semibold text-navy">Spiritual Athlete Inside (SAI)</span>{" "}
+              is someone who uses every role, every action, and every moment of life as a
+              disciplined practice to realize their inner divinity and live in a state of
+              peace and bliss.
+            </p>
+            <p>
+              A spiritual athlete uses every moment of life to act with excellence, live
+              with values, and realize their inner divinity.
+            </p>
+            <p>
+              To be a spiritual athlete is to turn life into a sacred training ground—where
+              every action refines you, every challenge strengthens you, and every moment
+              brings you closer to your true self.
+            </p>
+          </div>
+        </section>
       </section>
 
       <section className="page-shell py-8">

@@ -60,23 +60,23 @@ export function SiteHeader() {
             {open ? "✕" : "☰"}
           </button>
 
-          <nav className="hidden flex-wrap gap-2 lg:flex">
+          <nav className="hidden flex-nowrap gap-1.5 lg:flex">
             {navItems.map((item) =>
               item.disabled ? (
                 <span
                   key={item.href}
                   aria-disabled="true"
                   title="Coming soon — program is being finalized"
-                  className={`${disabledPillClasses} px-7 py-3.5 text-xl`}
+                  className={`${disabledPillClasses} whitespace-nowrap px-4 py-2.5 text-lg`}
                 >
                   {item.label}
-                  <span aria-hidden="true" className="ml-2 text-base">🔒</span>
+                  <span aria-hidden="true" className="ml-1.5 text-sm">🔒</span>
                 </span>
               ) : (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`${pillClasses} px-7 py-3.5 text-xl`}
+                  className={`${pillClasses} whitespace-nowrap px-4 py-2.5 text-lg`}
                 >
                   {item.label}
                 </Link>

@@ -11,8 +11,7 @@ export default function SpeakersPage() {
       <div className="card p-8 sm:p-10">
         <p className="pill">Speakers</p>
         <p className="mt-5 max-w-3xl text-xl leading-9 text-navy/78">
-          Meet the speakers joining us at Monte Toyon. Additional speakers and workshop
-          facilitators will be added as they are confirmed.
+          Meet the speakers joining us at the Retreat.
         </p>
         <div className="mt-8 grid gap-5 lg:grid-cols-2">
           {speakers.map((speaker) => (

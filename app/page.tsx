@@ -54,7 +54,7 @@ export default function HomePage() {
           <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-transparent" />
             <div className="relative flex h-full flex-col items-center justify-center text-center">
-              <h1 className="text-balance text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-[2.4rem] xl:text-[2.75rem]">
+              <h1 className="text-balance text-[2.25rem] font-black leading-tight tracking-tight sm:text-[2.7rem] lg:text-[2.88rem] xl:text-[3.3rem]">
                 43rd Annual Regional Retreat
               </h1>
               <ThemeWordmark />
@@ -105,10 +105,14 @@ export default function HomePage() {
       <section className="page-shell py-4">
         <section className="card p-8 sm:p-10">
           <p className="pill">Theme</p>
-          <h2 className="section-title mt-5">{retreat.theme}</h2>
-          <div className="mt-5 max-w-3xl space-y-5 text-lg leading-relaxed text-navy/85 sm:text-[1.15rem] sm:leading-[1.85]">
+          <h2 className="section-title mt-5">
+            Be The <span className="text-saffron">S</span>piritual{" "}
+            <span className="text-saffron">A</span>thlete{" "}
+            <span className="text-saffron">I</span>nside
+          </h2>
+          <div className="mt-5 space-y-5 text-lg leading-relaxed text-navy/85 sm:text-[1.15rem] sm:leading-[1.85]">
             <p>
-              <span className="font-semibold text-navy">Spiritual Athlete Inside (SAI)</span>{" "}
+              <span className="font-semibold text-navy">A Spiritual Athlete Inside</span>{" "}
               is someone who uses every role, every action, and every moment of life as a
               disciplined practice to realize their inner divinity and live in a state of
               peace and bliss.

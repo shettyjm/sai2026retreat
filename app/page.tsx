@@ -52,7 +52,7 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-12 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
+          <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-transparent" />
             <div className="relative flex h-full flex-col items-center justify-center text-center">
               <h1 className="text-balance text-3xl font-black leading-tight tracking-tight sm:text-4xl lg:text-[2.4rem] xl:text-[2.75rem]">
@@ -77,7 +77,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="page-shell grid gap-6 py-4 lg:grid-cols-[1.35fr,0.9fr]">
+      <section className="page-shell py-4">
         <div className="card relative overflow-hidden p-8 sm:p-10 lg:p-12">
           <div className="absolute inset-0 bg-halo opacity-80" />
           <div className="relative">
@@ -85,32 +85,22 @@ export default function HomePage() {
               Retreat Details
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-[1.5rem] bg-white/90 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Date:</p>
-                <p className="mt-3 text-xl font-semibold leading-8">{retreat.dates}</p>
+              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#f3ead0] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
+                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Date:</p>
+                <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.dates}</p>
               </div>
-              <div className="rounded-[1.5rem] bg-white/90 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Time:</p>
-                <p className="mt-3 text-xl font-semibold leading-8">{retreat.timeWindow}</p>
+              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#f3ead0] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
+                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Time:</p>
+                <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.timeWindow}</p>
               </div>
-              <div className="rounded-[1.5rem] bg-white/90 p-5">
-                <p className="text-sm uppercase tracking-[0.2em] text-saffron">Venue:</p>
-                <p className="mt-3 text-xl font-semibold leading-8">{retreat.venue}</p>
+              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#f3ead0] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
+                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Venue:</p>
+                <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.venue}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="card overflow-hidden bg-gradient-to-br from-navy to-[#274a72]">
-          <div className="relative aspect-[4/3]">
-            <Image
-              src={retreat.heroImageUrl}
-              alt="Swami retreat inspiration"
-              fill
-              className="object-cover"
-            />
-          </div>
-        </div>
       </section>
 
       <section className="page-shell py-4">
@@ -155,16 +145,11 @@ export default function HomePage() {
                 <h3 className="mt-3 text-3xl font-semibold">{day.date}</h3>
                 <div className="mt-5 space-y-3">
                   {day.items.slice(0, 4).map((item) => (
-                    <div key={`${day.id}-${item.time}`} className="flex items-center gap-3 rounded-2xl bg-sand p-4">
+                    <div key={`${day.id}-${item.title}`} className="flex items-center gap-3 rounded-2xl bg-sand p-4">
                       <span aria-hidden="true" className="text-3xl shrink-0">
                         {item.icon}
                       </span>
-                      <div className="min-w-0">
-                        <p className="text-sm font-semibold uppercase tracking-[0.16em] text-saffron">
-                          {item.time}
-                        </p>
-                        <p className="mt-1 text-xl font-semibold leading-7">{item.title}</p>
-                      </div>
+                      <p className="min-w-0 text-xl font-semibold leading-7">{item.title}</p>
                     </div>
                   ))}
                 </div>

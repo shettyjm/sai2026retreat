@@ -45,13 +45,13 @@ export default function RegistrationPage() {
 
         <div className="mt-6 rounded-[1.5rem] border border-saffron/30 bg-sand p-6">
           <p className="text-lg font-semibold text-navy">
-            1. Pre-registration is required even if you are a day attendee.
+            Pre-registration is required even if you are a day attendee.
           </p>
         </div>
       </section>
 
       <section className="card mt-8 p-8 sm:p-10">
-        <p className="pill">2. Lodging Information</p>
+        <p className="pill">Lodging Information</p>
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {lodgingOptions.map((item) => (
             <div
@@ -68,7 +68,7 @@ export default function RegistrationPage() {
       </section>
 
       <section className="card mt-8 p-8 sm:p-10">
-        <p className="pill">3. Retreat Pricing</p>
+        <p className="pill">Retreat Pricing</p>
         <p className="mt-4 text-base text-navy/70">
           Prices are per person and grouped by age.
         </p>
@@ -128,7 +128,7 @@ export default function RegistrationPage() {
       </section>
 
       <section className="card mt-8 p-8 sm:p-10">
-        <p className="pill">4. Scholarship Fund</p>
+        <p className="pill">Scholarship Fund</p>
         <h2 className="mt-4 text-2xl font-semibold text-navy">
           Need-Based Financial Assistance
         </h2>
@@ -146,7 +146,7 @@ export default function RegistrationPage() {
       </section>
 
       <section className="card mt-8 p-8 sm:p-10">
-        <p className="pill">5. Questions</p>
+        <p className="pill">Questions</p>
         <p className="mt-5 text-lg leading-8 text-navy/80">
           For any questions, please email{" "}
           <Link

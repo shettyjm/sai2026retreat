@@ -1,7 +1,36 @@
 import Link from "next/link";
 
 import { PageBanner } from "@/components/page-banner";
-import { retreat } from "@/lib/content";
+
+type Contact = {
+  name: string;
+  phone: string;
+};
+
+const retreatCoordinators: Contact[] = [
+  { name: "Jayanthi Srinivasan", phone: "408-529-5814" },
+  { name: "Shalini Sekar", phone: "925-586-0072" },
+  { name: "Ram Sivaraman", phone: "925-785-4941" },
+];
+
+const regionalContact: Contact = {
+  name: "Niranjen Kanepathipillai",
+  phone: "916-627-5084",
+};
+
+function ContactRow({ contact }: { contact: Contact }) {
+  return (
+    <div className="flex flex-col gap-1 rounded-[1.25rem] border border-navy/10 bg-white p-5 sm:flex-row sm:items-center sm:justify-between">
+      <p className="text-xl font-semibold text-navy">{contact.name}</p>
+      <Link
+        href={`tel:${contact.phone.replace(/-/g, "")}`}
+        className="text-xl font-semibold text-saffron hover:text-navy"
+      >
+        {contact.phone}
+      </Link>
+    </div>
+  );
+}
 
 export default function FaqPage() {
   return (
@@ -14,37 +43,25 @@ export default function FaqPage() {
             Contact information
           </h1>
 
-          <div className="mt-8 rounded-[1.75rem] border border-saffron/40 bg-sand p-8 text-center sm:p-10">
-            <p className="text-5xl" aria-hidden="true">
-              📇
-            </p>
-            <h2 className="mt-4 text-2xl font-bold text-navy sm:text-3xl">
-              Coming soon
+          <section className="mt-8">
+            <h2 className="text-2xl font-bold text-saffron sm:text-3xl">
+              Retreat Coordinators
             </h2>
-            <p className="mt-4 mx-auto max-w-2xl text-lg leading-8 text-navy/75 sm:text-xl">
-              We are gathering contact details for the retreat coordinators,
-              regional team, and support volunteers. This page will be updated
-              with names, phone numbers, and emails as the committee finalizes
-              roles.
-            </p>
-            <p className="mt-6 text-base leading-7 text-navy/80 sm:text-lg">
-              In the meantime, please reach out to{" "}
-              <Link
-                href={`mailto:${retreat.registrationEmail}`}
-                className="font-bold text-saffron hover:text-navy"
-              >
-                {retreat.registrationEmail}
-              </Link>{" "}
-              or call{" "}
-              <Link
-                href={`tel:${retreat.registrationPhone.replace(/-/g, "")}`}
-                className="font-bold text-saffron hover:text-navy"
-              >
-                {retreat.registrationPhone}
-              </Link>{" "}
-              for any retreat-related questions.
-            </p>
-          </div>
+            <div className="mt-4 grid gap-3">
+              {retreatCoordinators.map((c) => (
+                <ContactRow key={c.name} contact={c} />
+              ))}
+            </div>
+          </section>
+
+          <section className="mt-10">
+            <h2 className="text-2xl font-bold text-saffron sm:text-3xl">
+              Regional Contact
+            </h2>
+            <div className="mt-4 grid gap-3">
+              <ContactRow contact={regionalContact} />
+            </div>
+          </section>
         </div>
       </main>
     </>

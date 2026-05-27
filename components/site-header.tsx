@@ -14,10 +14,10 @@ type NavItem = {
 
 const navItems: NavItem[] = [
   { href: "/", label: "Home" },
-  { href: "/agenda", label: "Program", disabled: true },
+  { href: "/agenda", label: "Program" },
   { href: "/speakers", label: "Speakers" },
-  { href: "/logistics", label: "Communication" },
-  { href: "/sse-youth", label: "SSE", disabled: true },
+  { href: "/logistics", label: "Communication", disabled: true },
+  { href: "/sse-youth", label: "SSE" },
   { href: "/faq", label: "Contacts" },
   { href: "/registration", label: "Register" },
 ];

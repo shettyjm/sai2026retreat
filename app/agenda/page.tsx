@@ -14,10 +14,6 @@ export default function AgendaPage() {
           <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">
             Walk through of the Retreat One Day at a Time
           </h1>
-          <p className="mt-5 max-w-3xl text-xl leading-9 text-navy/78">
-            Each day is presented as a large, easy-to-scan timeline so families, elders, and
-            volunteers can quickly find the next part of the retreat.
-          </p>
         </div>
 
         <div className="mb-8 rounded-[1.75rem] border-2 border-saffron/50 bg-sand p-6 text-center sm:p-8">

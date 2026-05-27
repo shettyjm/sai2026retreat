@@ -136,6 +136,7 @@ export const agenda: AgendaDay[] = [
 
 import type { StaticImageData } from "next/image";
 
+import alexGrana from "@/assets/alex.jpeg";
 import aparnaMurali from "@/assets/AparnaMurali.jpeg";
 
 export type Speaker = {
@@ -143,12 +144,15 @@ export type Speaker = {
   role: string;
   bio: string;
   image?: StaticImageData;
+  imagePosition?: string;
 };
 
 export const speakers: Speaker[] = [
   {
     name: "Alejandro “Alex” Grana",
     role: "Retreat speaker",
+    image: alexGrana,
+    imagePosition: "center 30%",
     bio: "Originally from Peru, Alejandro “Alex” Grana, first met Sri Sathya Sai Baba in the mid 1980’s. Since then, he’s received direct guidance from Swami and has also served in various SSSIO capacities over the last 30 years. Starting his journey as a Young Adult Coordinator, in the US Alex has served as Devotional Coordinator and President of Region 10, National Service Coordinator and National Vice President. As part of his international duties with the SSSIO, he served as Secretary of the Humanitarian Relief Committee and Chairman of the Events and Hospitality Committee, responsible for coordinating all pilgrimages and events to Prasanthi Nilayam and around the world. He has also been blessed to direct and present devotional programs in Swami’s Divine Presence. Today, Alex serves as the US National Council President, Chairman of the International Events Committee, and Member of the International Humanitarian Relief Committee.\n\nAlex settled in Texas in 1993, graduating with honors from the University of Texas at Austin for both his undergraduate degree and MBA. After a successful corporate career, Alex retired as head of global investments of Tivoli Systems — IBM Software Group, to pursue his own entrepreneurial interests. He and his family also own and operate a brand of Montessori schools in Austin.",
   },
   {

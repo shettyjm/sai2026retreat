@@ -54,8 +54,8 @@ export default function HomePage() {
 
           <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-12 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-transparent" />
-            <div className="relative flex h-full flex-col justify-center">
-              <h1 className="text-balance text-3xl font-black leading-relaxed tracking-tight sm:text-4xl lg:text-[2.4rem] xl:text-[2.75rem]">
+            <div className="relative flex h-full flex-col items-center justify-center text-center">
+              <h1 className="text-balance text-3xl font-black leading-[2] tracking-tight sm:text-4xl lg:text-[2.4rem] xl:text-[2.75rem]">
                 43rd Annual Regional (Region 7) Retreat
               </h1>
               <ThemeWordmark />

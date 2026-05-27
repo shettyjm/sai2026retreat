@@ -23,6 +23,7 @@ export default function SpeakersPage() {
                     src={speaker.image}
                     alt={`Portrait of ${speaker.name}`}
                     className="h-72 w-full object-cover"
+                    style={speaker.imagePosition ? { objectPosition: speaker.imagePosition } : undefined}
                     placeholder="blur"
                   />
                 </div>

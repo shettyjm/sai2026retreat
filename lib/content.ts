@@ -20,7 +20,7 @@ export type AgendaDay = {
 };
 
 export const retreat = {
-  name: "43rd Annual Region 7 Sai Retreat",
+  name: "43rd Annual Regional Retreat",
   theme: "Be The Spiritual Athlete Inside",
   dates: "Friday, August 21, 2026 to Sunday, August 23, 2026",
   timeWindow: "Friday 6:00 PM to Sunday 4:00 PM",

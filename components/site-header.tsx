@@ -19,7 +19,7 @@ const navItems: NavItem[] = [
   { href: "/logistics", label: "Communication", disabled: true },
   { href: "/sse-youth", label: "SSE" },
   { href: "/faq", label: "Contacts" },
-  { href: "/registration", label: "Register" },
+  { href: "/registration", label: "Registration" },
 ];
 
 const pillClasses =

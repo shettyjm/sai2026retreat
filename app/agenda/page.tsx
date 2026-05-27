@@ -16,17 +16,13 @@ export default function AgendaPage() {
           </h1>
         </div>
 
-        <div className="mb-8 rounded-[1.75rem] border-2 border-saffron/50 bg-sand p-6 text-center sm:p-8">
-          <p className="text-4xl" aria-hidden="true">
-            🔒
+        <div className="mb-8 rounded-[1.75rem] border border-saffron/40 bg-sand p-10 text-center sm:p-14">
+          <p className="text-5xl" aria-hidden="true">
+            📅
           </p>
-          <h2 className="mt-3 text-2xl font-bold text-navy sm:text-3xl">
-            Draft Program — Yet to be finalized
+          <h2 className="mt-5 text-3xl font-bold text-navy sm:text-4xl">
+            Coming soon
           </h2>
-          <p className="mt-3 mx-auto max-w-2xl text-base leading-7 text-navy/75 sm:text-lg">
-            The full schedule below is a working draft and is intentionally blurred
-            until the committee finalizes the program. Check back soon.
-          </p>
         </div>
 
         <div

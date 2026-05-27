@@ -34,7 +34,7 @@ export function PageBanner() {
             }}
           >
             <Image
-              src="/site.jpg"
+              src="/sitepic.jpeg"
               alt="Monte Toyon Camp & Conference Center"
               fill
               priority

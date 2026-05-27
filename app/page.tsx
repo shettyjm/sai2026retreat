@@ -65,7 +65,7 @@ export default function HomePage() {
           <div className="card overflow-hidden lg:h-[560px] lg:rounded-l-none">
             <div className="relative h-full w-full aspect-[4/5] lg:aspect-auto">
               <Image
-                src="/site.jpg"
+                src="/sitepic.jpeg"
                 alt="Monte Toyon Camp & Conference Center"
                 fill
                 priority

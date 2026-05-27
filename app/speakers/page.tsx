@@ -9,7 +9,7 @@ export default function SpeakersPage() {
       <PageBanner />
       <main className="page-shell py-10 lg:py-14">
       <div className="card p-8 sm:p-10">
-        <p className="pill">Speakers</p>
+        <p className="pill">Guest Speakers</p>
         <p className="mt-5 max-w-3xl text-xl leading-9 text-navy/78">
           Meet the speakers joining us at the Retreat.
         </p>

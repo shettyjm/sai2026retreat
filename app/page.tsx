@@ -112,7 +112,7 @@ export default function HomePage() {
           </h2>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-navy/85 sm:text-[1.15rem] sm:leading-[1.85]">
             <p>
-              <span className="font-semibold text-navy">A Spiritual Athlete Inside</span>{" "}
+              A <span className="font-semibold text-navy">Spiritual Athlete Inside</span>{" "}
               is someone who uses every role, every action, and every moment of life as a
               disciplined practice to realize their inner divinity and live in a state of
               peace and bliss.

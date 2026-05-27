@@ -41,13 +41,13 @@ export default function HomePage() {
           <div className="card overflow-hidden lg:h-[560px] lg:rounded-r-none">
             <div className="relative h-full w-full aspect-[4/5] lg:aspect-auto">
               <Image
-                src="/nat04.jpg"
+                src="/swamihome.jpeg"
                 alt="Sathya Sai Baba"
                 fill
                 priority
                 sizes="(min-width: 1024px) 33vw, 100vw"
                 className="object-cover"
-                style={{ objectPosition: "27% 10%" }}
+                style={{ objectPosition: "center 5%" }}
               />
             </div>
           </div>

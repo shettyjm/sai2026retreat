@@ -67,7 +67,7 @@ export function SiteHeader() {
                   key={item.href}
                   aria-disabled="true"
                   title="Coming soon — program is being finalized"
-                  className={`${disabledPillClasses} whitespace-nowrap px-4 py-2.5 text-lg`}
+                  className={`${disabledPillClasses} whitespace-nowrap px-4 py-2.5 text-[1.24rem]`}
                 >
                   {item.label}
                   <span aria-hidden="true" className="ml-1.5 text-sm">🔒</span>
@@ -76,7 +76,7 @@ export function SiteHeader() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`${pillClasses} whitespace-nowrap px-4 py-2.5 text-lg`}
+                  className={`${pillClasses} whitespace-nowrap px-4 py-2.5 text-[1.24rem]`}
                 >
                   {item.label}
                 </Link>
@@ -92,7 +92,7 @@ export function SiteHeader() {
                 <span
                   key={item.href}
                   aria-disabled="true"
-                  className={`${disabledPillClasses} block px-5 py-3 text-center text-lg`}
+                  className={`${disabledPillClasses} block px-5 py-3 text-center text-[1.24rem]`}
                 >
                   {item.label}
                   <span aria-hidden="true" className="ml-2 text-base">🔒</span>
@@ -102,7 +102,7 @@ export function SiteHeader() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
-                  className={`${pillClasses} block px-5 py-3 text-center text-lg`}
+                  className={`${pillClasses} block px-5 py-3 text-center text-[1.24rem]`}
                 >
                   {item.label}
                 </Link>

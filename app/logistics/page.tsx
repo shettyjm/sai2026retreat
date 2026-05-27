@@ -16,8 +16,14 @@ export default function LogisticsPage() {
           </h1>
           <div className="mt-8 grid gap-4">
             {logistics.map((item) => (
-              <div key={item} className="rounded-[1.75rem] bg-white p-6">
-                <p className="text-lg leading-8 text-navy/80">{item}</p>
+              <div
+                key={item.text}
+                className="flex items-start gap-4 rounded-[1.75rem] bg-white p-6"
+              >
+                <span aria-hidden="true" className="text-3xl shrink-0 leading-none">
+                  {item.icon}
+                </span>
+                <p className="text-lg leading-8 text-navy/80">{item.text}</p>
               </div>
             ))}
           </div>

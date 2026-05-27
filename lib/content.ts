@@ -160,11 +160,26 @@ export const speakers: Speaker[] = [
 ];
 
 export const logistics = [
-  "Expect a peaceful camp setting surrounded by redwoods, shared movement between program spaces, and a devotional rhythm throughout the day.",
-  "Bring comfortable modest clothing, layers for cool mornings and evenings, walking shoes, a water bottle, medicines, and any personal devotional items.",
-  "Food details, lodging assignments, transportation coordination, and quiet-hour instructions can be finalized here once confirmed.",
-  "Arrival guidance should include parking directions, check-in windows, and elder-friendly drop-off notes.",
-  "This section is structured for emergency preparedness, dietary notes, weather expectations, and family support information.",
+  {
+    icon: "🌲",
+    text: "Expect a peaceful camp setting surrounded by redwoods, shared movement between program spaces, and a devotional rhythm throughout the day.",
+  },
+  {
+    icon: "🎒",
+    text: "Bring comfortable modest clothing, layers for cool mornings and evenings, walking shoes, a water bottle, medicines, and any personal devotional items.",
+  },
+  {
+    icon: "🍽️",
+    text: "Food details, lodging assignments, transportation coordination, and quiet-hour instructions can be finalized here once confirmed.",
+  },
+  {
+    icon: "🚗",
+    text: "Arrival guidance should include parking directions, check-in windows, and elder-friendly drop-off notes.",
+  },
+  {
+    icon: "🛡️",
+    text: "This section is structured for emergency preparedness, dietary notes, weather expectations, and family support information.",
+  },
 ];
 
 export const youthNotes = [

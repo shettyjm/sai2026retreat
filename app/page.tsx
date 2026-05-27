@@ -55,7 +55,7 @@ export default function HomePage() {
           <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-12 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-transparent" />
             <div className="relative flex h-full flex-col justify-center">
-              <h1 className="text-balance text-3xl font-black tracking-tight sm:text-4xl lg:text-[2.4rem] xl:text-[2.75rem]">
+              <h1 className="text-balance text-3xl font-black leading-relaxed tracking-tight sm:text-4xl lg:text-[2.4rem] xl:text-[2.75rem]">
                 43rd Annual Regional (Region 7) Retreat
               </h1>
               <ThemeWordmark />
@@ -101,19 +101,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="card overflow-hidden">
-          <div className="border-b border-white/60 bg-gradient-to-br from-navy to-[#274a72] p-6 text-white">
-            <Image
-              src={retreat.logoUrl}
-              alt="SSIO logo"
-              width={84}
-              height={84}
-              className="h-20 w-20 rounded-full bg-white/90 p-2"
-            />
-            <p className="mt-6 text-sm uppercase tracking-[0.24em] text-white/70">
-              Retreat inspiration
-            </p>
-          </div>
+        <div className="card overflow-hidden bg-gradient-to-br from-navy to-[#274a72]">
           <div className="relative aspect-[4/3]">
             <Image
               src={retreat.heroImageUrl}
@@ -129,7 +117,7 @@ export default function HomePage() {
         <section className="card p-8 sm:p-10">
           <p className="pill">Theme</p>
           <h2 className="section-title mt-5">{retreat.theme}</h2>
-          <div className="mt-5 max-w-4xl space-y-5 text-lg leading-8 text-navy/80 sm:text-xl">
+          <div className="mt-5 max-w-3xl space-y-5 text-lg leading-relaxed text-navy/85 sm:text-[1.15rem] sm:leading-[1.85]">
             <p>
               <span className="font-semibold text-navy">Spiritual Athlete Inside (SAI)</span>{" "}
               is someone who uses every role, every action, and every moment of life as a

@@ -24,7 +24,16 @@ const config: Config = {
           "radial-gradient(circle at top, rgba(231, 177, 92, 0.35), transparent 38%)",
       },
       fontFamily: {
-        sans: ["Georgia", "ui-serif", "serif"],
+        sans: [
+          "var(--font-inter)",
+          "system-ui",
+          "-apple-system",
+          "Segoe UI",
+          "Roboto",
+          "Helvetica",
+          "Arial",
+          "sans-serif",
+        ],
       },
     },
   },

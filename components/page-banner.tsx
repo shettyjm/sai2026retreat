@@ -15,13 +15,13 @@ export function PageBanner() {
             }}
           >
             <Image
-              src="/nat04.jpg"
+              src="/swamihome.jpeg"
               alt="Sathya Sai Baba"
               fill
               priority
               sizes="(min-width: 1280px) 750px, 62vw"
               className="object-cover"
-              style={{ objectPosition: "27% 10%" }}
+              style={{ objectPosition: "center 5%" }}
             />
           </div>
           <div

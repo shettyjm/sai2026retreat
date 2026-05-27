@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import {
   agenda,
-  faqs,
   retreat,
 } from "@/lib/content";
 
@@ -144,7 +143,7 @@ export default function HomePage() {
                 <p className="text-sm uppercase tracking-[0.22em] text-saffron">{day.label}</p>
                 <h3 className="mt-3 text-3xl font-semibold">{day.date}</h3>
                 <div className="mt-5 space-y-3">
-                  {day.items.slice(0, 4).map((item) => (
+                  {(day.highlights ?? day.items.slice(0, 4)).map((item) => (
                     <div key={`${day.id}-${item.title}`} className="flex items-center gap-3 rounded-2xl bg-sand p-4">
                       <span aria-hidden="true" className="text-3xl shrink-0">
                         {item.icon}
@@ -185,19 +184,6 @@ export default function HomePage() {
         </section>
       </section>
 
-      <section className="page-shell py-4">
-        <div className="card p-8 sm:p-10">
-          <p className="pill">Frequently Asked</p>
-          <div className="mt-6 grid gap-4">
-            {faqs.slice(0, 3).map((faq) => (
-              <div key={faq.question} className="rounded-[1.5rem] border border-navy/10 bg-white p-6">
-                <h3 className="text-2xl font-semibold">{faq.question}</h3>
-                <p className="mt-3 text-lg leading-8 text-navy/75">{faq.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
     </main>
   );
 }

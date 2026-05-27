@@ -5,12 +5,18 @@ export type AgendaItem = {
   icon: string;
 };
 
+export type AgendaHighlight = {
+  title: string;
+  icon: string;
+};
+
 export type AgendaDay = {
   id: string;
   label: string;
   date: string;
   summary: string;
   items: AgendaItem[];
+  highlights?: AgendaHighlight[];
 };
 
 export const retreat = {
@@ -96,6 +102,12 @@ export const agenda: AgendaDay[] = [
     label: "Saturday",
     date: "August 22, 2026",
     summary: "The fullest retreat day with practice, learning, reflection, and evening offering.",
+    highlights: [
+      { title: "Morning Prayers and Devotional Offering", icon: "🌅" },
+      { title: "Yoga, Nature Walk and Fireball", icon: "🧘" },
+      { title: "Speaker Sessions", icon: "🎤" },
+      { title: "Workshops", icon: "🛠️" },
+    ],
     items: [
       { time: "6:00 AM", title: "Suprabatham", icon: "🌅" },
       { time: "6:30 AM", title: "Nagar Sankirtan", icon: "🎶" },
@@ -118,6 +130,12 @@ export const agenda: AgendaDay[] = [
     label: "Sunday",
     date: "August 23, 2026",
     summary: "Prayerful closing with speaker reflection, workshops, and departure.",
+    highlights: [
+      { title: "Morning Prayers and Devotional Offering", icon: "🌅" },
+      { title: "Yoga, Nature Walk and Fireball", icon: "🧘" },
+      { title: "Speaker Sessions", icon: "🎤" },
+      { title: "Workshops", icon: "🛠️" },
+    ],
     items: [
       { time: "6:00 AM", title: "Suprabatham", icon: "🌅" },
       { time: "6:30 AM", title: "Nagar Sankirtan", icon: "🎶" },

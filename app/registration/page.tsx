@@ -74,14 +74,20 @@ export default function RegistrationPage() {
         </p>
 
         <div className="mt-6 overflow-x-auto">
-          <table className="w-full min-w-[560px] border-collapse text-left">
+          <table className="w-full min-w-[820px] border-collapse text-left">
             <thead>
               <tr className="bg-navy text-white">
                 <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
                   Age Group
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Total (Overnight Stay)
+                  Overnight Stay (Friday thru Sunday)
+                </th>
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  Overnight Stay (Friday thru Saturday)
+                </th>
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  Overnight Stay (Saturday AM thru Sunday)
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
                   1 Day Attendee
@@ -105,7 +111,13 @@ export default function RegistrationPage() {
                     {row.ageGroup}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-saffron">
-                    {row.overnight}
+                    {row.friSun}
+                  </td>
+                  <td className="px-4 py-3 text-base font-semibold text-saffron">
+                    {row.friSat}
+                  </td>
+                  <td className="px-4 py-3 text-base font-semibold text-saffron">
+                    {row.satSun}
                   </td>
                   <td className="px-4 py-3 text-base">{row.oneDay}</td>
                   <td className="px-4 py-3 text-base">{row.twoDay}</td>

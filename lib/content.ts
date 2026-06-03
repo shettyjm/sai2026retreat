@@ -58,15 +58,38 @@ export const lodgingOptions = [
 
 export type PricingRow = {
   ageGroup: string;
-  overnight: string;
+  friSun: string;
+  friSat: string;
+  satSun: string;
   oneDay: string;
   twoDay: string;
 };
 
 export const pricingRows: PricingRow[] = [
-  { ageGroup: "5 and under", overnight: "$0", oneDay: "$0", twoDay: "$0" },
-  { ageGroup: "6 through 11", overnight: "$120", oneDay: "$57", twoDay: "$113" },
-  { ageGroup: "12 and Up", overnight: "$194", oneDay: "$91", twoDay: "$182" },
+  {
+    ageGroup: "5 years and under",
+    friSun: "0",
+    friSat: "0",
+    satSun: "0",
+    oneDay: "0",
+    twoDay: "0",
+  },
+  {
+    ageGroup: "6 through 11 years",
+    friSun: "179",
+    friSat: "96",
+    satSun: "120",
+    oneDay: "56.5",
+    twoDay: "113",
+  },
+  {
+    ageGroup: "12 years and up",
+    friSun: "297",
+    friSat: "160",
+    satSun: "194",
+    oneDay: "91",
+    twoDay: "182",
+  },
 ];
 
 export const registrationNotes = [

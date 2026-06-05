@@ -92,10 +92,30 @@ export const pricingRows: PricingRow[] = [
   },
 ];
 
-export const registrationNotes = [
-  "Registration for the entire retreat includes lodging for one night, two breakfasts, two lunches, and two dinners.",
-  '"Day Use - Sat" includes breakfast, lunch, and dinner.',
-  '"Day Use - Sun" includes breakfast, lunch, and dinner.',
+export const registrationNotes: { label: string; description: string }[] = [
+  {
+    label: "Overnight Stay Friday Evening–Sunday Evening",
+    description:
+      "Includes Friday dinner and lodging; Saturday breakfast, lunch, dinner, and lodging; and Sunday breakfast, lunch, and dinner.",
+  },
+  {
+    label: "Overnight Stay Friday Evening–Saturday Evening",
+    description:
+      "Includes Friday dinner and lodging, plus Saturday breakfast, lunch, and dinner.",
+  },
+  {
+    label: "Overnight Stay Saturday Morning–Sunday Evening",
+    description:
+      "Includes Saturday breakfast, lunch, dinner, and lodging, plus Sunday breakfast, lunch, and dinner.",
+  },
+  {
+    label: "Saturday Day Pass",
+    description: "Includes breakfast, lunch, and dinner. No lodging included.",
+  },
+  {
+    label: "Sunday Day Pass",
+    description: "Includes breakfast, lunch, and dinner. No lodging included.",
+  },
 ];
 
 export const highlights = [

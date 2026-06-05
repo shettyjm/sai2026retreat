@@ -129,11 +129,14 @@ export default function RegistrationPage() {
 
         <div className="mt-6 rounded-[1.5rem] bg-sky/55 p-6">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-navy/70">
-            Notes
+            What&rsquo;s Included
           </p>
-          <ul className="mt-3 list-disc space-y-2 pl-5 text-base leading-7 text-navy/80">
+          <ul className="mt-3 space-y-3 text-base leading-7 text-navy/80">
             {registrationNotes.map((note) => (
-              <li key={note}>{note}</li>
+              <li key={note.label}>
+                <span className="font-semibold text-navy">{note.label}:</span>{" "}
+                {note.description}
+              </li>
             ))}
           </ul>
         </div>

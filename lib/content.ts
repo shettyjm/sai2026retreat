@@ -39,10 +39,15 @@ export const retreat = {
     "https://region7saicenters.org/region7new/retreat/assets/images/swami2025.jpg",
 };
 
-export const lodgingOptions = [
+export const lodgingOptions: {
+  title: string;
+  description: string;
+  tone?: "warning";
+}[] = [
   {
     title: "Semi-Private Lodges",
     description: "No semi-private lodges at this location.",
+    tone: "warning",
   },
   {
     title: "Cabins / Dorms",

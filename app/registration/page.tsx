@@ -52,14 +52,20 @@ export default function RegistrationPage() {
 
       <section className="card mt-8 p-8 sm:p-10">
         <p className="pill">Lodging Information</p>
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
+        <div className="mt-6 flex flex-col gap-4">
           {lodgingOptions.map((item) => (
             <div
               key={item.title}
               className="rounded-[1.5rem] border border-navy/10 bg-white p-6"
             >
               <h3 className="text-xl font-semibold text-navy">{item.title}</h3>
-              <p className="mt-3 text-base leading-7 text-navy/75">
+              <p
+                className={`mt-3 text-base leading-7 ${
+                  item.tone === "warning"
+                    ? "font-semibold text-red-600"
+                    : "text-navy/75"
+                }`}
+              >
                 {item.description}
               </p>
             </div>
@@ -128,10 +134,7 @@ export default function RegistrationPage() {
         </div>
 
         <div className="mt-6 rounded-[1.5rem] bg-sky/55 p-6">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-navy/70">
-            What&rsquo;s Included
-          </p>
-          <ul className="mt-3 space-y-3 text-base leading-7 text-navy/80">
+          <ul className="space-y-3 text-base leading-7 text-navy/80">
             {registrationNotes.map((note) => (
               <li key={note.label}>
                 <span className="font-semibold text-navy">{note.label}:</span>{" "}

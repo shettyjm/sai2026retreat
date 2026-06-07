@@ -28,8 +28,8 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
-            <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-transparent" />
+          <div className="card relative overflow-hidden bg-gradient-to-br from-sand via-[#cae8bd] to-[#b0db9c] p-7 text-navy sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-navy/10">
+            <div className="absolute inset-0 bg-gradient-to-br from-saffron/15 via-transparent to-transparent" />
             <HeroBackdrop />
             <HeroHeadline />
           </div>
@@ -66,15 +66,15 @@ export default function HomePage() {
               Retreat Details
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#f3ead0] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
+              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#ddf6d2] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
                 <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Date:</p>
                 <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.dates}</p>
               </div>
-              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#f3ead0] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
+              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#ddf6d2] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
                 <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Time:</p>
                 <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.timeWindow}</p>
               </div>
-              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#f3ead0] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
+              <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#ddf6d2] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
                 <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Venue:</p>
                 <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.venue}</p>
               </div>

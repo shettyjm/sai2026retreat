@@ -56,11 +56,11 @@ export function HeroHeadline() {
       </motion.h1>
 
       <motion.div variants={item} className="mt-8 space-y-4">
-        <p className="text-sm font-bold uppercase tracking-[0.24em] text-sunset sm:text-base">
+        <p className="text-sm font-bold uppercase tracking-[0.24em] text-bark sm:text-base">
           Theme:
         </p>
         <div className="space-y-2">
-          <div className="text-[1.2rem] font-semibold tracking-tight text-white sm:text-[1.4rem] lg:text-[1.9rem]">
+          <div className="text-[1.2rem] font-semibold tracking-tight text-navy sm:text-[1.4rem] lg:text-[1.9rem]">
             Be The
           </div>
           <motion.div
@@ -69,27 +69,27 @@ export function HeroHeadline() {
             animate="visible"
             className="text-[1.4rem] font-semibold tracking-tight sm:text-[1.9rem] lg:whitespace-nowrap lg:text-[2.2rem] xl:text-[2.5rem]"
           >
-            <motion.span variants={letter} className="inline-block text-saffron">
+            <motion.span variants={letter} className="inline-block text-bark">
               S
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-white">
+            <motion.span variants={letter} className="inline-block text-navy">
               piritual&nbsp;
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-saffron">
+            <motion.span variants={letter} className="inline-block text-bark">
               A
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-white">
+            <motion.span variants={letter} className="inline-block text-navy">
               thlete&nbsp;
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-saffron">
+            <motion.span variants={letter} className="inline-block text-bark">
               I
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-white">
+            <motion.span variants={letter} className="inline-block text-navy">
               nside
             </motion.span>
           </motion.div>
         </div>
-        <p className="pt-3 text-sm font-semibold tracking-wide text-white/85 sm:text-base">
+        <p className="pt-3 text-sm font-semibold tracking-wide text-navy/75 sm:text-base">
           August 21 to 23, 2026
         </p>
       </motion.div>

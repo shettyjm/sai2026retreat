@@ -25,7 +25,7 @@ body {
   @apply bg-sand text-navy antialiased;
   background-image:
     radial-gradient(circle at top left, rgba(255, 255, 255, 0.95), transparent 35%),
-    linear-gradient(180deg, #f8f2e8 0%, #f6efe1 55%, #fcfaf6 100%);
+    linear-gradient(180deg, #f1fbeb 0%, #ecfae5 55%, #f6fdf2 100%);
 }
 
 a,

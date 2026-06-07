@@ -23,7 +23,7 @@ const navItems: NavItem[] = [
 ];
 
 const pillClasses =
-  "rounded-full border border-rose/60 bg-rose/70 font-bold text-navy hover:border-saffron/50 hover:bg-rose hover:text-saffron";
+  "rounded-full border border-saffron/30 bg-gradient-to-r from-rose to-sky font-bold text-navy shadow-sm transition hover:border-saffron hover:from-saffron hover:to-sunset hover:text-navy hover:shadow-md";
 
 const disabledPillClasses =
   "rounded-full border border-navy/15 bg-navy/5 font-bold text-navy/40 cursor-not-allowed";
@@ -55,7 +55,7 @@ export function SiteHeader() {
             onClick={() => setOpen((o) => !o)}
             aria-label={open ? "Close menu" : "Open menu"}
             aria-expanded={open}
-            className="flex h-12 w-12 items-center justify-center rounded-full border border-rose/60 bg-rose/70 text-2xl font-bold text-navy active:scale-95 lg:hidden"
+            className="flex h-12 w-12 items-center justify-center rounded-full border border-saffron/40 bg-gradient-to-br from-rose to-sky text-2xl font-bold text-navy shadow-sm transition hover:from-saffron hover:to-sunset active:scale-95 lg:hidden"
           >
             {open ? "✕" : "☰"}
           </button>

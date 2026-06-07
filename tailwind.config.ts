@@ -8,13 +8,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#f6efe1",
-        saffron: "#d28b2f",
-        sunset: "#e7b15c",
-        navy: "#16314f",
-        sky: "#dceaf4",
-        leaf: "#57724f",
-        rose: "#f5dfd6",
+        sand: "#ecfae5",
+        saffron: "#b0db9c",
+        sunset: "#cae8bd",
+        navy: "#1d3a23",
+        sky: "#ddf6d2",
+        leaf: "#cae8bd",
+        rose: "#ecfae5",
+        bark: "#14291a",
       },
       boxShadow: {
         glow: "0 20px 50px rgba(22, 49, 79, 0.12)",

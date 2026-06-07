@@ -1,43 +1,20 @@
 import Image from "next/image";
 import Link from "next/link";
 
+import { Reveal } from "@/components/motion/reveal";
+import { HeroBackdrop, HeroHeadline } from "@/components/motion/hero-headline";
+import { RegisterCta } from "@/components/motion/register-cta";
 import {
   agenda,
   retreat,
 } from "@/lib/content";
-
-function ThemeWordmark() {
-  return (
-    <div className="mt-8 space-y-4">
-      <p className="text-sm font-bold uppercase tracking-[0.24em] text-sunset sm:text-base">
-        Theme:
-      </p>
-      <div className="space-y-2">
-        <div className="text-[1.2rem] font-semibold tracking-tight text-white sm:text-[1.4rem] lg:text-[1.9rem]">
-          Be The
-        </div>
-        <div className="text-[1.4rem] font-semibold tracking-tight sm:text-[1.9rem] lg:whitespace-nowrap lg:text-[2.2rem] xl:text-[2.5rem]">
-          <span className="text-saffron">S</span>
-          <span className="text-white">piritual </span>
-          <span className="text-saffron">A</span>
-          <span className="text-white">thlete </span>
-          <span className="text-saffron">I</span>
-          <span className="text-white">nside</span>
-        </div>
-      </div>
-      <p className="pt-3 text-sm font-semibold tracking-wide text-white/85 sm:text-base">
-        August 21 to 23, 2026
-      </p>
-    </div>
-  );
-}
 
 export default function HomePage() {
   return (
     <main className="pb-10">
       <section className="page-shell pb-4 pt-6 lg:pb-6 lg:pt-10">
         <div className="relative grid items-stretch gap-6 lg:grid-cols-[0.8fr,1.5fr,0.8fr] lg:gap-0">
-          <div className="card overflow-hidden lg:h-[560px] lg:rounded-r-none">
+          <Reveal className="card overflow-hidden lg:h-[560px] lg:rounded-r-none" delay={0.05}>
             <div className="relative h-full w-full aspect-[4/5] lg:aspect-auto">
               <Image
                 src="/swamihome.jpeg"
@@ -49,19 +26,15 @@ export default function HomePage() {
                 style={{ objectPosition: "center 5%" }}
               />
             </div>
-          </div>
+          </Reveal>
 
           <div className="card relative overflow-hidden bg-gradient-to-br from-navy via-[#1f3a5f] to-[#274a72] p-7 text-white sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-white/10">
             <div className="absolute inset-0 bg-gradient-to-br from-saffron/10 via-transparent to-transparent" />
-            <div className="relative flex h-full flex-col items-center justify-center text-center">
-              <h1 className="text-balance text-[2.25rem] font-black leading-tight tracking-tight sm:text-[2.7rem] lg:text-[2.88rem] xl:text-[3.3rem]">
-                43rd Annual Regional Retreat
-              </h1>
-              <ThemeWordmark />
-            </div>
+            <HeroBackdrop />
+            <HeroHeadline />
           </div>
 
-          <div className="card overflow-hidden lg:h-[560px] lg:rounded-l-none">
+          <Reveal className="card overflow-hidden lg:h-[560px] lg:rounded-l-none" delay={0.05}>
             <div className="relative h-full w-full aspect-[4/5] lg:aspect-auto">
               <Image
                 src="/sitepic.jpeg"
@@ -72,11 +45,20 @@ export default function HomePage() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </Reveal>
         </div>
+
+        <Reveal className="mt-8 flex flex-col items-center gap-3" delay={0.2}>
+          <RegisterCta href={retreat.cognitoFormUrl}>
+            Reserve your spot
+          </RegisterCta>
+          <p className="text-sm text-navy/70">
+            Pre-registration is required, even for day attendees.
+          </p>
+        </Reveal>
       </section>
 
-      <section className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-4">
         <div className="card relative overflow-hidden p-8 sm:p-10 lg:p-12">
           <div className="absolute inset-0 bg-halo opacity-80" />
           <div className="relative">
@@ -99,10 +81,9 @@ export default function HomePage() {
             </div>
           </div>
         </div>
+      </Reveal>
 
-      </section>
-
-      <section className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-4">
         <section className="card p-8 sm:p-10">
           <p className="pill">Theme</p>
           <h2 className="section-title mt-5">
@@ -128,9 +109,9 @@ export default function HomePage() {
             </p>
           </div>
         </section>
-      </section>
+      </Reveal>
 
-      <section className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-4">
         <div className="card p-8 sm:p-10">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -142,8 +123,13 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="mt-8 grid gap-5 lg:grid-cols-3">
-            {agenda.map((day) => (
-              <article key={day.id} className="rounded-[2rem] border border-navy/10 bg-white p-6">
+            {agenda.map((day, idx) => (
+              <Reveal
+                key={day.id}
+                as="article"
+                className="rounded-[2rem] border border-navy/10 bg-white p-6"
+                delay={idx * 0.12}
+              >
                 <p className="text-sm uppercase tracking-[0.22em] text-saffron">{day.label}</p>
                 <h3 className="mt-3 text-3xl font-semibold">{day.date}</h3>
                 <div className="mt-5 space-y-3">
@@ -156,13 +142,13 @@ export default function HomePage() {
                     </div>
                   ))}
                 </div>
-              </article>
+              </Reveal>
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      <section className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-4">
         <section className="card p-8 sm:p-10">
           <p className="pill">Location</p>
           <h2 className="section-title mt-5">{retreat.venue}</h2>
@@ -186,7 +172,7 @@ export default function HomePage() {
             </Link>
           </div>
         </section>
-      </section>
+      </Reveal>
 
     </main>
   );

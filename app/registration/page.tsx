@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { PageBanner } from "@/components/page-banner";
+import { RegisterCta } from "@/components/motion/register-cta";
 import {
   lodgingOptions,
   pricingRows,
@@ -189,14 +190,7 @@ export default function RegistrationPage() {
           page in a new tab.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
-          <Link
-            href={retreat.cognitoFormUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-sunset px-8 py-4 text-lg font-semibold text-navy hover:bg-white"
-          >
-            Register
-          </Link>
+          <RegisterCta href={retreat.cognitoFormUrl}>Register</RegisterCta>
           <Link
             href={`mailto:${retreat.registrationEmail}`}
             className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-base font-semibold text-white hover:bg-white/20"

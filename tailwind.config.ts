@@ -19,6 +19,15 @@ const config: Config = {
       boxShadow: {
         glow: "0 20px 50px rgba(22, 49, 79, 0.12)",
       },
+      keyframes: {
+        rise: {
+          from: { opacity: "0", transform: "translateY(6px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        rise: "rise 0.3s ease both",
+      },
       backgroundImage: {
         halo:
           "radial-gradient(circle at top, rgba(231, 177, 92, 0.35), transparent 38%)",

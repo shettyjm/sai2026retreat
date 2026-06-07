@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { PageBanner } from "@/components/page-banner";
-import { RegisterCta } from "@/components/motion/register-cta";
+import { RegistrationForm } from "@/components/registration/registration-form";
 import {
   lodgingOptions,
   pricingRows,
@@ -24,10 +24,9 @@ export default function RegistrationPage() {
         </p>
 
         <p className="mt-6 text-lg leading-8 text-navy/80">
-          Please read the following instructions and click the{" "}
-          <span className="font-semibold">Register</span> button at the bottom of
-          this page to register using a credit card. If you would like to mail a
-          check, please send an email to{" "}
+          Please review the information below, then complete the registration
+          form at the bottom of this page. If you would like to mail a check,
+          please send an email to{" "}
           <Link
             href={`mailto:${retreat.registrationEmail}`}
             className="font-semibold text-saffron hover:text-navy"
@@ -178,25 +177,18 @@ export default function RegistrationPage() {
         </p>
       </section>
 
-      <section className="mt-10 rounded-[2rem] border border-saffron/40 bg-gradient-to-br from-navy to-[#274a72] p-8 text-white sm:p-10">
-        <p className="text-sm uppercase tracking-[0.24em] text-sunset">
-          Ready to register?
-        </p>
-        <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-          Complete your registration with a credit card
+      <section className="card mt-8 p-6 sm:p-8 lg:p-10">
+        <p className="pill">Complete your registration</p>
+        <h2 className="mt-4 text-3xl font-semibold text-navy sm:text-4xl">
+          Lodging, meals & registrants
         </h2>
-        <p className="mt-4 max-w-2xl text-lg leading-8 text-white/85">
-          The Register button below opens the secure Cognito Forms registration
-          page in a new tab.
+        <p className="mt-3 text-base text-navy/70">
+          Add each adult and any accompanying children below. Meals are
+          pre-selected; uncheck any you don&rsquo;t need and the total updates
+          live.
         </p>
-        <div className="mt-8 flex flex-wrap items-center gap-4">
-          <RegisterCta href={retreat.cognitoFormUrl}>Register</RegisterCta>
-          <Link
-            href={`mailto:${retreat.registrationEmail}`}
-            className="rounded-full border border-white/30 bg-white/10 px-6 py-3 text-base font-semibold text-white hover:bg-white/20"
-          >
-            Email registration team
-          </Link>
+        <div className="mt-6">
+          <RegistrationForm />
         </div>
       </section>
       </main>

@@ -139,6 +139,52 @@ export default function RegistrationPage() {
           </table>
         </div>
 
+        <div className="mt-8 overflow-x-auto">
+          <table className="w-full min-w-[540px] border-collapse text-left">
+            <thead>
+              <tr className="bg-navy text-white">
+                <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  Meals
+                </th>
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  5 years and under
+                </th>
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  6 through 11 years
+                </th>
+                <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  12 years and up
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { meal: "Friday Dinner", under5: "0", age6_11: "$14.20", age12up: "$21.70" },
+                { meal: "Saturday Breakfast", under5: "0", age6_11: "$10.73", age12up: "$15.71" },
+                { meal: "Saturday Lunch", under5: "0", age6_11: "$12.87", age12up: "$18.89" },
+                { meal: "Saturday Dinner", under5: "0", age6_11: "$14.20", age12up: "$21.70" },
+                { meal: "Sunday Breakfast", under5: "0", age6_11: "$10.73", age12up: "$15.71" },
+                { meal: "Sunday Lunch", under5: "0", age6_11: "$12.87", age12up: "$18.89" },
+                { meal: "Sunday Dinner", under5: "0", age6_11: "$14.20", age12up: "$21.70" },
+              ].map((row, index) => (
+                <tr
+                  key={row.meal}
+                  className={
+                    index % 2 === 0
+                      ? "bg-white text-navy"
+                      : "bg-sand/60 text-navy"
+                  }
+                >
+                  <td className="px-4 py-3 text-base font-semibold">{row.meal}</td>
+                  <td className="px-4 py-3 text-base">{row.under5}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-saffron">{row.age6_11}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-saffron">{row.age12up}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
         <div className="mt-6 rounded-[1.5rem] bg-sky/55 p-6">
           <ul className="space-y-3 text-base leading-7 text-navy/80">
             {registrationNotes.map((note) => (

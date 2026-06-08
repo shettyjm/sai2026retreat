@@ -7,7 +7,7 @@ export function PageBanner() {
         <div className="relative aspect-[16/4] min-h-[140px] w-full bg-navy sm:min-h-[180px] lg:min-h-[240px]">
           <div className="absolute inset-y-0 left-0 w-[68%]">
             <Image
-              src="/photo1.jpg"
+              src="/photo2.jpg"
               alt="Sathya Sai Baba"
               fill
               priority

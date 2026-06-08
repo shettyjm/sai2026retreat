@@ -13,7 +13,7 @@ export function PageBanner() {
               priority
               sizes="(min-width: 1280px) 750px, 62vw"
               className="object-cover"
-              style={{ objectPosition: "center 5%" }}
+              style={{ objectPosition: "center 35%" }}
             />
           </div>
           <div

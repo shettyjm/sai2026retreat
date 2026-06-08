@@ -19,17 +19,6 @@ const item = {
   },
 };
 
-const flyIn = {
-  hidden: { opacity: 0, x: -260, rotate: -10, scale: 0.85 },
-  visible: {
-    opacity: 1,
-    x: 0,
-    rotate: 0,
-    scale: 1,
-    transition: { duration: 1.0, ease: [0.22, 1, 0.36, 1] as const },
-  },
-};
-
 const letterContainer = {
   hidden: { opacity: 0 },
   visible: {
@@ -59,18 +48,11 @@ export function HeroHeadline() {
       initial={initial}
       animate="visible"
     >
-      <motion.p
-        variants={flyIn}
-        className="mb-2 text-base font-black uppercase tracking-[0.32em] text-[#F97316] sm:text-lg"
-      >
-        Region 7
-      </motion.p>
-
       <motion.h1
         variants={item}
-        className="text-balance text-[2.25rem] font-black leading-tight tracking-tight sm:text-[2.7rem] lg:text-[2.88rem] xl:text-[3.3rem]"
+        className="text-[2.25rem] font-[750] leading-tight tracking-tight sm:text-[2.5rem] lg:text-[2.75rem] xl:text-[3rem]"
       >
-        43rd Annual Regional Retreat
+        43<sup className="text-[0.5em] font-semibold">rd</sup> Annual Regional Retreat
       </motion.h1>
 
       <motion.div variants={item} className="mt-8 space-y-4">
@@ -104,8 +86,8 @@ export function HeroHeadline() {
             </motion.span>
           </motion.div>
         </div>
-        <p className="pt-3 text-sm font-semibold tracking-wide text-navy/75 sm:text-base">
-          August 21, 2026 - August 23, 2026
+        <p className="pt-3 text-[1.2rem] font-semibold tracking-tight text-navy/75 sm:text-[1.4rem] lg:text-[1.9rem]">
+          August 21 - 23, 2026
         </p>
       </motion.div>
     </motion.div>

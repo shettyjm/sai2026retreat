@@ -3,8 +3,20 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion, useReducedMotion } from "motion/react";
 
 import { retreat } from "@/lib/content";
+
+const orgFlyIn = {
+  hidden: { opacity: 0, x: -180, rotate: -8, scale: 0.9 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+    scale: 1,
+    transition: { duration: 0.95, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
 
 type NavItem = {
   href: string;
@@ -30,6 +42,7 @@ const disabledPillClasses =
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const reduce = useReducedMotion();
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/60 bg-sand/90 backdrop-blur-xl">
@@ -49,6 +62,20 @@ export function SiteHeader() {
               className="h-12 w-auto sm:h-16 lg:h-20"
             />
           </Link>
+
+          <motion.div
+            variants={orgFlyIn}
+            initial={reduce ? "visible" : "hidden"}
+            animate="visible"
+            className="hidden flex-1 text-center text-[#F97316] lg:block"
+          >
+            <span className="block whitespace-nowrap text-[0.5rem] font-black uppercase leading-[1.2] tracking-[0.04em] xl:text-[0.62rem]">
+              Sri Sathya Sai International Organization,
+            </span>
+            <span className="block whitespace-nowrap text-[0.56rem] font-black uppercase leading-[1.2] tracking-[0.08em] xl:text-[0.7rem]">
+              USA Region 7
+            </span>
+          </motion.div>
 
           <button
             type="button"

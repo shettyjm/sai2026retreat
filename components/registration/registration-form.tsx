@@ -156,7 +156,7 @@ export function RegistrationForm() {
   if (status === "success") {
     return (
       <div className="rounded-[2rem] border border-leaf/40 bg-gradient-to-br from-sand to-white p-8 text-navy sm:p-10">
-        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-saffron">
+        <p className="text-sm font-semibold uppercase tracking-[0.18em] text-[#F97316]">
           Registration received
         </p>
         <h3 className="mt-3 text-3xl font-semibold">Thank you — your details are with us.</h3>
@@ -669,7 +669,7 @@ function Summary({
   return (
     <div className="sticky bottom-3 z-10 lg:static lg:bottom-auto">
       <div className="rounded-[1.5rem] bg-navy p-6 text-white shadow-[0_18px_40px_-18px_rgba(15,32,57,0.7)]">
-        <p className="font-serif text-sm uppercase tracking-[0.12em] text-saffron">
+        <p className="font-serif text-sm uppercase tracking-[0.12em] text-[#F97316]">
           Registration summary
         </p>
         <div className="mt-3 space-y-1.5 text-sm">
@@ -711,13 +711,13 @@ function Summary({
           )}
         </div>
         <div className="mt-4 flex items-baseline justify-between border-t border-white/15 pt-3">
-          <span className="text-xs uppercase tracking-[0.18em] text-saffron">
+          <span className="text-xs uppercase tracking-[0.18em] text-[#F97316]">
             Total due
           </span>
           <span className="font-serif text-3xl font-semibold">{money(grand)}</span>
         </div>
         <div className="mt-4 space-y-2">
-          <p className="text-xs uppercase tracking-[0.18em] text-saffron">
+          <p className="text-xs uppercase tracking-[0.18em] text-[#F97316]">
             Payment method
           </p>
           {PAYMENT_OPTIONS.map((opt) => {

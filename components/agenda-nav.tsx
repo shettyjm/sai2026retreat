@@ -17,7 +17,7 @@ export function AgendaNav() {
             href={`/agenda#${day.id}`}
             className="rounded-3xl border border-navy/10 bg-sky/55 px-4 py-4 text-left hover:border-saffron/35 hover:bg-white"
           >
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-saffron">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[#F97316]">
               {day.label}
             </p>
             <p className="mt-1 text-xl font-semibold text-navy">{day.date}</p>

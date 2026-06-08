@@ -50,5 +50,6 @@ button {
 }
 
 .pill {
-  @apply inline-flex items-center rounded-full border border-saffron/30 bg-white/90 px-4 py-2 text-sm font-medium tracking-[0.15em] text-saffron uppercase;
+  @apply inline-flex items-center rounded-full border border-[#F97316]/30 bg-white/90 px-4 py-2 text-sm font-medium tracking-[0.15em] uppercase;
+  color: #F97316;
 }

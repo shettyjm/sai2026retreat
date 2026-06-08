@@ -57,15 +57,15 @@ export default function HomePage() {
             </h2>
             <div className="mt-8 grid gap-4 sm:grid-cols-3">
               <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#ddf6d2] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
-                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Date:</p>
+                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-[#F97316]">Date:</p>
                 <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.dates}</p>
               </div>
               <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#ddf6d2] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
-                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Time:</p>
+                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-[#F97316]">Time:</p>
                 <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.timeWindow}</p>
               </div>
               <div className="rounded-[1.5rem] border border-leaf/25 bg-gradient-to-br from-sand via-[#ddf6d2] to-leaf/15 p-5 shadow-glow ring-1 ring-leaf/15">
-                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-saffron">Venue:</p>
+                <p className="text-[0.96rem] uppercase tracking-[0.2em] text-[#F97316]">Venue:</p>
                 <p className="mt-3 text-[1.375rem] font-semibold leading-8">{retreat.venue}</p>
               </div>
             </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
                 className="rounded-[2rem] border border-navy/10 bg-white p-6"
                 delay={idx * 0.12}
               >
-                <p className="text-sm uppercase tracking-[0.22em] text-saffron">{day.label}</p>
+                <p className="text-sm uppercase tracking-[0.22em] text-[#F97316]">{day.label}</p>
                 <h3 className="mt-3 text-3xl font-semibold">{day.date}</h3>
                 <div className="mt-5 space-y-3">
                   {(day.highlights ?? day.items.slice(0, 4)).map((item) => (

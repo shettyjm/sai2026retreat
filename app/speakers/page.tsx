@@ -31,7 +31,7 @@ export default function SpeakersPage() {
                   Photo placeholder
                 </div>
               )}
-              <p className="text-sm uppercase tracking-[0.18em] text-saffron">{speaker.role}</p>
+              <p className="text-sm uppercase tracking-[0.18em] text-[#F97316]">{speaker.role}</p>
               <h2 className="mt-3 text-3xl font-semibold">{speaker.name}</h2>
               <div className="mt-4 space-y-4 text-lg leading-8 text-navy/75">
                 {speaker.bio.split("\n\n").map((paragraph, index) => (

@@ -72,8 +72,8 @@ export function SiteHeader() {
             <span className="block whitespace-nowrap text-[0.5rem] font-black uppercase leading-[1.2] tracking-[0.04em] xl:text-[0.62rem]">
               Sri Sathya Sai International Organization,
             </span>
-            <span className="block whitespace-nowrap text-[0.56rem] font-black uppercase leading-[1.2] tracking-[0.08em] xl:text-[0.7rem]">
-              USA Region 7
+            <span className="block whitespace-nowrap text-[0.5rem] font-black uppercase leading-[1.2] tracking-[0.04em] xl:text-[0.62rem]">
+              USA, Region 7
             </span>
           </motion.div>
 

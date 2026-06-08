@@ -74,9 +74,6 @@ export function HeroHeadline() {
       </motion.h1>
 
       <motion.div variants={item} className="mt-8 space-y-4">
-        <p className="text-sm font-bold uppercase tracking-[0.24em] text-bark sm:text-base">
-          Theme:
-        </p>
         <div className="space-y-2">
           <div className="text-[1.2rem] font-semibold tracking-tight text-navy sm:text-[1.4rem] lg:text-[1.9rem]">
             Be The
@@ -108,7 +105,7 @@ export function HeroHeadline() {
           </motion.div>
         </div>
         <p className="pt-3 text-sm font-semibold tracking-wide text-navy/75 sm:text-base">
-          August 21 to 23, 2026
+          August 21, 2026 - August 23, 2026
         </p>
       </motion.div>
     </motion.div>

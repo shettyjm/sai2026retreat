@@ -141,7 +141,7 @@ export const agenda: AgendaDay[] = [
     items: [
       { time: "6:00 PM", title: "Arrival and check-in", icon: "🎒" },
       { time: "6:45 PM", title: "Dinner", icon: "🍽️" },
-      { time: "8:00 PM", title: "Outdoor firepit gathering", note: "Weather permitting", icon: "🔥" },
+      { time: "8:00 PM", title: "Outdoor firebowl gathering", note: "Weather permitting", icon: "🔥" },
       { time: "9:00 PM", title: "Devotional offering and quiet close", icon: "🪔" },
     ],
   },
@@ -152,14 +152,14 @@ export const agenda: AgendaDay[] = [
     summary: "The fullest retreat day with practice, learning, reflection, and evening offering.",
     highlights: [
       { title: "Morning Prayers and Devotional Offering", icon: "🌅" },
-      { title: "Yoga, Nature Walk and Fireball", icon: "🧘" },
+      { title: "Yoga, Nature Walk and Firebowl", icon: "🧘" },
       { title: "Speaker Sessions", icon: "🎤" },
       { title: "Workshops", icon: "🛠️" },
     ],
     items: [
       { time: "6:00 AM", title: "Suprabatham", icon: "🌅" },
       { time: "6:30 AM", title: "Nagar Sankirtan", icon: "🎶" },
-      { time: "7:15 AM", title: "Yoga, nature walk, or fireball activity", icon: "🧘" },
+      { time: "7:15 AM", title: "Yoga, nature walk, or firebowl activity", icon: "🧘" },
       { time: "8:00 AM", title: "Breakfast", icon: "🥣" },
       { time: "9:00 AM", title: "Check-in continuation and welcome flow", icon: "👋" },
       { time: "10:00 AM", title: "Devotional offering", icon: "🪔" },
@@ -180,14 +180,14 @@ export const agenda: AgendaDay[] = [
     summary: "Prayerful closing with speaker reflection, workshops, and departure.",
     highlights: [
       { title: "Morning Prayers and Devotional Offering", icon: "🌅" },
-      { title: "Yoga, Nature Walk and Fireball", icon: "🧘" },
+      { title: "Yoga, Nature Walk and Firebowl", icon: "🧘" },
       { title: "Speaker Sessions", icon: "🎤" },
       { title: "Workshops", icon: "🛠️" },
     ],
     items: [
       { time: "6:00 AM", title: "Suprabatham", icon: "🌅" },
       { time: "6:30 AM", title: "Nagar Sankirtan", icon: "🎶" },
-      { time: "7:15 AM", title: "Nature walk or fireball activity", icon: "🌳" },
+      { time: "7:15 AM", title: "Nature walk or firebowl activity", icon: "🌳" },
       { time: "8:00 AM", title: "Breakfast", icon: "🥣" },
       { time: "9:00 AM", title: "Devotional offering", icon: "🪔" },
       { time: "10:00 AM", title: "Speaker session", icon: "🎤" },
@@ -219,12 +219,12 @@ export const speakers: Speaker[] = [
     role: "Guest Speaker",
     image: alexGrana,
     imagePosition: "center 10%",
-    bio: "Originally from Peru, Alejandro “Alex” Grana, first met Sri Sathya Sai Baba in the mid 1980’s. Since then, he’s received direct guidance from Swami and has also served in various SSSIO capacities over the last 30 years. Starting his journey as a Young Adult Coordinator, in the US Alex has served as Devotional Coordinator and President of Region 10, National Service Coordinator and National Vice President. As part of his international duties with the SSSIO, he served as Secretary of the Humanitarian Relief Committee and Chairman of the Events and Hospitality Committee, responsible for coordinating all pilgrimages and events to Prasanthi Nilayam and around the world. He has also been blessed to direct and present devotional programs in Swami’s Divine Presence. Today, Alex serves as the US National Council President, Chairman of the International Events Committee, and Member of the International Humanitarian Relief Committee.\n\nAlex settled in Texas in 1993, graduating with honors from the University of Texas at Austin for both his undergraduate degree and MBA. After a successful corporate career, Alex retired as head of global investments of Tivoli Systems — IBM Software Group, to pursue his own entrepreneurial interests. He and his family also own and operate a brand of Montessori schools in Austin.",
+    bio: "Originally from Peru, Alejandro “Alex” Grana, first met Sri Sathya Sai Baba in the mid 1980’s. Since then, he’s received direct guidance from Swami and has also served in various SSSIO capacities over the last 30 years. Starting his journey as a Young Adult Coordinator, in the US Alex has served as Devotional Coordinator and President of Region 10, National Service Coordinator and National Vice President. As part of his international duties with the SSSIO, he served as Secretary of the Humanitarian Relief Committee and Chairman of the Events and Hospitality Committee, responsible for coordinating all pilgrimages and events to Prasanthi Nilayam and around the world. He has also been blessed to direct and present devotional programs in Swami’s Divine Presence. Today, Alex serves as the US National Council President, Chairman of the International Events Committee, and Member of the International Humanitarian Relief Committee.\n\nAlex settled in Texas in 1993, graduating with honors from the University of Texas at Austin for both his undergraduate degree and MBA. After a successful corporate career, Alex retired as head of global investments of Tivoli Systems - IBM Software Group, to pursue his own entrepreneurial interests. He and his family also own and operate a brand of Montessori schools in Austin.",
   },
   {
     name: "Aparna Murali",
     role: "Guest Speaker",
-    bio: "Aparna Murali is deeply grateful for the blessing of being born into a family devoted to Bhagawan since the early 1960s. While Balvikas laid a strong foundation for loving God, it was the three transformative years spent living as His student that profoundly shaped her spiritual journey. She feels blessed to have had the opportunity to serve at all levels of the SSSIO — Center, Regional, National, Zonal, and International. She currently serves as a member of the SSSIO Education Committee and as the Zone 1 Education Coordinator. Among all her roles, the one she cherishes the most is being part of SSE as a perpetual learner.\n\nProfessionally, Aparna works in the Department of Obstetrics and Gynecology at UCLA as a Reproductive Genetic Counselor. In addition to her clinical practice, she is actively involved in teaching and mentorship, serving as faculty and clinical supervisor for UCLA's Graduate Program in Genetic Counseling, where she shares her knowledge and passion with the next generation of counselors.",
+    bio: "Aparna Murali is deeply grateful for the blessing of being born into a family devoted to Bhagawan since the early 1960s. While Balvikas laid a strong foundation for loving God, it was the three transformative years spent living as His student that profoundly shaped her spiritual journey. She feels blessed to have had the opportunity to serve at all levels of the SSSIO - Center, Regional, National, Zonal, and International. She currently serves as a member of the SSSIO Education Committee and as the Zone 1 Education Coordinator. Among all her roles, the one she cherishes the most is being part of SSE as a perpetual learner.\n\nProfessionally, Aparna works in the Department of Obstetrics and Gynecology at UCLA as a Reproductive Genetic Counselor. In addition to her clinical practice, she is actively involved in teaching and mentorship, serving as faculty and clinical supervisor for UCLA's Graduate Program in Genetic Counseling, where she shares her knowledge and passion with the next generation of counselors.",
     image: aparnaMurali,
   },
 ];

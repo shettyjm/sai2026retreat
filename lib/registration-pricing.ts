@@ -77,7 +77,7 @@ export const SERVICES = [
   "Venue Cleanup",
   "Venue Setup",
   "Videography",
-  "Zero Waste",
+  "Envirocare",
 ] as const;
 
 export const MEALS: Record<MealKey, { name: string; time: string }> = {

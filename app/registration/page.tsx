@@ -151,7 +151,7 @@ export default function RegistrationPage() {
           Need-Based Financial Assistance
         </h2>
         <p className="mt-5 text-lg leading-8 text-navy/80">
-          We do not want anyone to &ldquo;miss&rdquo; the retreat because of
+          We do not want anyone to miss the retreat because of
           financial constraints. Participants may apply for scholarships or
           need-based financial assistance. However, scholarship funds are
           limited, and devotees are encouraged to consider all stay options.

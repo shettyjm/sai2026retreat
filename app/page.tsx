@@ -16,7 +16,7 @@ export default function HomePage() {
           <Reveal className="card overflow-hidden lg:h-[560px] lg:rounded-r-none" delay={0.05}>
             <div className="relative h-full w-full aspect-[4/5] lg:aspect-auto">
               <Image
-                src="/swamihome.jpeg"
+                src="/swamihometab.jpg"
                 alt="Sathya Sai Baba"
                 fill
                 priority
@@ -93,9 +93,7 @@ export default function HomePage() {
               with values, and realize their inner divinity.
             </p>
             <p>
-              To be a spiritual athlete is to turn life into a sacred training ground—where
-              every action refines you, every challenge strengthens you, and every moment
-              brings you closer to your true self.
+              To be a spiritual athlete is to turn life into a sacred training ground.
             </p>
           </div>
         </section>

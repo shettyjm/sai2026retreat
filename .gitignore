@@ -12,3 +12,6 @@ HeroBannerCutOff.png
 bannertextndentation.png
 missingspacing.png
 repalcewithlogo.png
+
+# Source TIFFs are local-only — the JPEGs in /public are the tracked source of truth.
+assets/swami/

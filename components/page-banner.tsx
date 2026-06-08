@@ -5,17 +5,9 @@ export function PageBanner() {
     <section className="page-shell pt-6 pb-2 lg:pt-8 lg:pb-4">
       <div className="card overflow-hidden">
         <div className="relative aspect-[16/4] min-h-[140px] w-full bg-navy sm:min-h-[180px] lg:min-h-[240px]">
-          <div
-            className="absolute inset-y-0 left-0 w-[62%]"
-            style={{
-              WebkitMaskImage:
-                "linear-gradient(to right, black 0%, black 65%, transparent 100%)",
-              maskImage:
-                "linear-gradient(to right, black 0%, black 65%, transparent 100%)",
-            }}
-          >
+          <div className="absolute inset-y-0 left-0 w-[68%]">
             <Image
-              src="/swamihome.jpeg"
+              src="/swamipage.png"
               alt="Sathya Sai Baba"
               fill
               priority
@@ -25,12 +17,12 @@ export function PageBanner() {
             />
           </div>
           <div
-            className="absolute inset-y-0 right-0 w-[62%]"
+            className="absolute inset-y-0 right-0 w-[68%]"
             style={{
               WebkitMaskImage:
-                "linear-gradient(to left, black 0%, black 65%, transparent 100%)",
+                "linear-gradient(to left, black 0%, black 40%, transparent 100%)",
               maskImage:
-                "linear-gradient(to left, black 0%, black 65%, transparent 100%)",
+                "linear-gradient(to left, black 0%, black 40%, transparent 100%)",
             }}
           >
             <Image

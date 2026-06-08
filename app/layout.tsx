@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 
 import "./globals.css";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-const inter = Inter({
+const sans = Hanken_Grotesk({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-sans",
   display: "swap",
 });
 
@@ -22,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={sans.variable}>
       <body>
         <SiteHeader />
         {children}

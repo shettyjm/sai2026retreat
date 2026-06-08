@@ -19,6 +19,17 @@ const item = {
   },
 };
 
+const flyIn = {
+  hidden: { opacity: 0, x: -260, rotate: -10, scale: 0.85 },
+  visible: {
+    opacity: 1,
+    x: 0,
+    rotate: 0,
+    scale: 1,
+    transition: { duration: 1.0, ease: [0.22, 1, 0.36, 1] as const },
+  },
+};
+
 const letterContainer = {
   hidden: { opacity: 0 },
   visible: {
@@ -48,6 +59,13 @@ export function HeroHeadline() {
       initial={initial}
       animate="visible"
     >
+      <motion.p
+        variants={flyIn}
+        className="mb-2 text-base font-black uppercase tracking-[0.32em] text-[#F97316] sm:text-lg"
+      >
+        Region 7
+      </motion.p>
+
       <motion.h1
         variants={item}
         className="text-balance text-[2.25rem] font-black leading-tight tracking-tight sm:text-[2.7rem] lg:text-[2.88rem] xl:text-[3.3rem]"
@@ -69,19 +87,19 @@ export function HeroHeadline() {
             animate="visible"
             className="text-[1.4rem] font-semibold tracking-tight sm:text-[1.9rem] lg:whitespace-nowrap lg:text-[2.2rem] xl:text-[2.5rem]"
           >
-            <motion.span variants={letter} className="inline-block text-bark">
+            <motion.span variants={letter} className="inline-block text-[#F97316]">
               S
             </motion.span>
             <motion.span variants={letter} className="inline-block text-navy">
               piritual&nbsp;
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-bark">
+            <motion.span variants={letter} className="inline-block text-[#F97316]">
               A
             </motion.span>
             <motion.span variants={letter} className="inline-block text-navy">
               thlete&nbsp;
             </motion.span>
-            <motion.span variants={letter} className="inline-block text-bark">
+            <motion.span variants={letter} className="inline-block text-[#F97316]">
               I
             </motion.span>
             <motion.span variants={letter} className="inline-block text-navy">

@@ -3,7 +3,6 @@ import Link from "next/link";
 
 import { Reveal } from "@/components/motion/reveal";
 import { HeroBackdrop, HeroHeadline } from "@/components/motion/hero-headline";
-import { RegisterCta } from "@/components/motion/register-cta";
 import {
   agenda,
   retreat,
@@ -28,7 +27,7 @@ export default function HomePage() {
             </div>
           </Reveal>
 
-          <div className="card relative overflow-hidden bg-gradient-to-br from-sand via-[#cae8bd] to-[#b0db9c] p-7 text-navy sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-navy/10">
+          <div className="card relative overflow-hidden bg-gradient-to-br from-[#e4f8db] via-[#d5edca] to-[#c0e2b0] p-7 text-navy sm:p-9 lg:z-10 lg:-mx-9 lg:h-[560px] lg:rounded-[2.25rem] lg:p-10 lg:shadow-2xl lg:ring-1 lg:ring-navy/10">
             <div className="absolute inset-0 bg-gradient-to-br from-saffron/15 via-transparent to-transparent" />
             <HeroBackdrop />
             <HeroHeadline />
@@ -47,15 +46,6 @@ export default function HomePage() {
             </div>
           </Reveal>
         </div>
-
-        <Reveal className="mt-8 flex flex-col items-center gap-3" delay={0.2}>
-          <RegisterCta href={retreat.cognitoFormUrl}>
-            Reserve your spot
-          </RegisterCta>
-          <p className="text-sm text-navy/70">
-            Pre-registration is required, even for day attendees.
-          </p>
-        </Reveal>
       </section>
 
       <Reveal as="section" className="page-shell py-4">
@@ -87,9 +77,9 @@ export default function HomePage() {
         <section className="card p-8 sm:p-10">
           <p className="pill">Theme</p>
           <h2 className="section-title mt-5">
-            Be The <span className="text-saffron">S</span>piritual{" "}
-            <span className="text-saffron">A</span>thlete{" "}
-            <span className="text-saffron">I</span>nside
+            Be The <span className="text-[#F97316]">S</span>piritual{" "}
+            <span className="text-[#F97316]">A</span>thlete{" "}
+            <span className="text-[#F97316]">I</span>nside
           </h2>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-navy/85 sm:text-[1.15rem] sm:leading-[1.85]">
             <p>

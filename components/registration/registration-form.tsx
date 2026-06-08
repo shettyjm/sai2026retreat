@@ -25,6 +25,13 @@ let uid = 0;
 const nextId = () => ++uid;
 
 type Status = "idle" | "submitting" | "success" | "error";
+type PaymentMethod = "card" | "paypal" | "venmo";
+
+const PAYMENT_OPTIONS: { key: PaymentMethod; label: string; sub: string }[] = [
+  { key: "card", label: "Credit Card", sub: "Visa, Mastercard, Amex" },
+  { key: "paypal", label: "PayPal", sub: "Pay with your PayPal balance" },
+  { key: "venmo", label: "Venmo", sub: "Pay with Venmo" },
+];
 
 function makeAdult(): Person {
   return {
@@ -72,6 +79,7 @@ export function RegistrationForm() {
   const [scholarship, setScholarship] = useState(0);
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>("card");
 
   const updatePerson = (id: number, patch: Partial<Person> | ((p: Person) => Person)) =>
     setPeople((prev) =>
@@ -129,6 +137,7 @@ export function RegistrationForm() {
       })),
       scholarship,
       total: Number(grand.toFixed(2)),
+      paymentMethod,
     };
     try {
       const res = await fetch("/api/register", {
@@ -160,12 +169,32 @@ export function RegistrationForm() {
           .
         </p>
         <p className="mt-6 text-2xl font-semibold">Estimated total: {money(grand)}</p>
+        <p className="mt-2 text-sm text-navy/70">
+          Payment method selected:{" "}
+          <span className="font-semibold">
+            {PAYMENT_OPTIONS.find((o) => o.key === paymentMethod)?.label}
+          </span>
+        </p>
       </div>
     );
   }
 
   return (
-    <div className="space-y-6">
+    <div className="lg:grid lg:grid-cols-[30%_1fr] lg:items-start lg:gap-8">
+      <div className="order-2 mt-6 lg:order-1 lg:mt-0 lg:sticky lg:top-6">
+        <Summary
+          people={people}
+          scholarship={scholarship}
+          grand={grand}
+          onSubmit={onSubmit}
+          status={status}
+          errorMsg={errorMsg}
+          paymentMethod={paymentMethod}
+          setPaymentMethod={setPaymentMethod}
+        />
+      </div>
+
+      <div className="order-1 space-y-6 lg:order-2">
       <div>
         <h3 className="font-serif text-2xl font-semibold text-navy">Adult Registrants</h3>
         <p className="mt-1 text-sm text-navy/65">
@@ -242,14 +271,7 @@ export function RegistrationForm() {
         </div>
       </div>
 
-      <Summary
-        people={people}
-        scholarship={scholarship}
-        grand={grand}
-        onSubmit={onSubmit}
-        status={status}
-        errorMsg={errorMsg}
-      />
+      </div>
     </div>
   );
 }
@@ -626,6 +648,8 @@ function Summary({
   onSubmit,
   status,
   errorMsg,
+  paymentMethod,
+  setPaymentMethod,
 }: {
   people: Person[];
   scholarship: number;
@@ -633,10 +657,17 @@ function Summary({
   onSubmit: () => void;
   status: Status;
   errorMsg: string;
+  paymentMethod: PaymentMethod;
+  setPaymentMethod: (m: PaymentMethod) => void;
 }) {
+  const ctaLabel: Record<PaymentMethod, string> = {
+    card: "Continue with Credit Card",
+    paypal: "Continue with PayPal",
+    venmo: "Continue with Venmo",
+  };
   const hasPeople = people.some((p) => personTotal(p) > 0 || p.first || p.last);
   return (
-    <div className="sticky bottom-3 z-10 mt-6">
+    <div className="sticky bottom-3 z-10 lg:static lg:bottom-auto">
       <div className="rounded-[1.5rem] bg-navy p-6 text-white shadow-[0_18px_40px_-18px_rgba(15,32,57,0.7)]">
         <p className="font-serif text-sm uppercase tracking-[0.12em] text-saffron">
           Registration summary
@@ -685,13 +716,58 @@ function Summary({
           </span>
           <span className="font-serif text-3xl font-semibold">{money(grand)}</span>
         </div>
+        <div className="mt-4 space-y-2">
+          <p className="text-xs uppercase tracking-[0.18em] text-saffron">
+            Payment method
+          </p>
+          {PAYMENT_OPTIONS.map((opt) => {
+            const checked = paymentMethod === opt.key;
+            return (
+              <label
+                key={opt.key}
+                className={`flex cursor-pointer items-center gap-3 rounded-xl border px-3 py-2.5 transition ${
+                  checked
+                    ? "border-saffron bg-white/10"
+                    : "border-white/15 hover:border-white/40"
+                }`}
+              >
+                <input
+                  type="radio"
+                  name="payment-method"
+                  value={opt.key}
+                  checked={checked}
+                  onChange={() => setPaymentMethod(opt.key)}
+                  className="sr-only"
+                />
+                <span
+                  className={`grid h-4 w-4 shrink-0 place-items-center rounded-full border-2 ${
+                    checked ? "border-saffron" : "border-white/40"
+                  }`}
+                >
+                  <span
+                    className={`h-2 w-2 rounded-full bg-saffron transition ${
+                      checked ? "scale-100" : "scale-0"
+                    }`}
+                  />
+                </span>
+                <span className="flex-1">
+                  <span className="block text-sm font-semibold text-white">
+                    {opt.label}
+                  </span>
+                  <span className="block text-xs text-white/60">{opt.sub}</span>
+                </span>
+                <PaymentIcon method={opt.key} />
+              </label>
+            );
+          })}
+        </div>
         <button
           type="button"
           onClick={onSubmit}
           disabled={status === "submitting"}
           className="mt-4 w-full rounded-xl bg-sunset px-4 py-3.5 text-base font-semibold text-navy transition hover:bg-white disabled:cursor-wait disabled:opacity-70"
         >
-          {status === "submitting" ? "Submitting…" : "Continue to payment"}
+          {status === "submitting" ? "Submitting…" : ctaLabel[paymentMethod]}
         </button>
         {status === "error" && (
           <p className="mt-3 text-sm text-sunset">
@@ -873,5 +949,28 @@ function XIcon() {
     <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none" strokeWidth={1.8}>
       <path d="M3 3l10 10M13 3L3 13" stroke="currentColor" strokeLinecap="round" />
     </svg>
+  );
+}
+
+function PaymentIcon({ method }: { method: PaymentMethod }) {
+  if (method === "card") {
+    return (
+      <svg viewBox="0 0 24 16" className="h-5 w-7 shrink-0" fill="none">
+        <rect x="0.5" y="0.5" width="23" height="15" rx="2.5" stroke="currentColor" />
+        <rect x="2" y="3" width="20" height="2.5" fill="currentColor" />
+        <rect x="2" y="9" width="6" height="1.5" fill="currentColor" opacity="0.6" />
+        <rect x="2" y="11.5" width="9" height="1.5" fill="currentColor" opacity="0.6" />
+      </svg>
+    );
+  }
+  if (method === "paypal") {
+    return (
+      <span className="font-serif text-sm font-bold text-white">
+        Pay<span className="text-saffron">Pal</span>
+      </span>
+    );
+  }
+  return (
+    <span className="text-sm font-bold italic text-[#3D95CE]">venmo</span>
   );
 }

@@ -50,7 +50,7 @@ export function SiteHeader() {
         <div className="flex items-center justify-between gap-3">
           <Link
             href="/"
-            className="inline-flex items-center"
+            className="inline-flex shrink-0 items-center"
             aria-label="Region 7 Sai Retreat — Home"
           >
             <Image
@@ -67,7 +67,7 @@ export function SiteHeader() {
             variants={orgFlyIn}
             initial={reduce ? "visible" : "hidden"}
             animate="visible"
-            className="hidden flex-1 text-center text-[#F97316] lg:block"
+            className="mx-auto hidden shrink text-center text-[#F97316] lg:block"
           >
             <span className="block whitespace-nowrap text-[0.5rem] font-black uppercase leading-[1.2] tracking-[0.04em] xl:text-[0.62rem]">
               Sri Sathya Sai International Organization,

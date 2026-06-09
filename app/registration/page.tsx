@@ -121,17 +121,17 @@ export default function RegistrationPage() {
                   <td className="px-4 py-3 text-base font-semibold">
                     {row.ageGroup}
                   </td>
-                  <td className="px-4 py-3 text-base font-semibold text-saffron">
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
                     {row.friSun}
                   </td>
-                  <td className="px-4 py-3 text-base font-semibold text-saffron">
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
                     {row.friSat}
                   </td>
-                  <td className="px-4 py-3 text-base font-semibold text-saffron">
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
                     {row.satSun}
                   </td>
-                  <td className="px-4 py-3 text-base">{row.oneDay}</td>
-                  <td className="px-4 py-3 text-base">{row.twoDay}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.oneDay}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.twoDay}</td>
                 </tr>
               ))}
             </tbody>
@@ -175,9 +175,9 @@ export default function RegistrationPage() {
                   }
                 >
                   <td className="px-4 py-3 text-base font-semibold">{row.meal}</td>
-                  <td className="px-4 py-3 text-base">{row.under5}</td>
-                  <td className="px-4 py-3 text-base font-semibold text-saffron">{row.age6_11}</td>
-                  <td className="px-4 py-3 text-base font-semibold text-saffron">{row.age12up}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.under5}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.age6_11}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.age12up}</td>
                 </tr>
               ))}
             </tbody>

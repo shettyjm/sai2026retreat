@@ -46,7 +46,7 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-white/60 bg-sand/90 backdrop-blur-xl">
-      <div className="page-shell py-3 lg:py-4">
+      <div className="page-shell pb-2 pt-2 lg:pb-3 lg:pt-3">
         <div className="flex items-center justify-between gap-3">
           <Link
             href="/"
@@ -62,20 +62,6 @@ export function SiteHeader() {
               className="h-12 w-auto sm:h-16 lg:h-20"
             />
           </Link>
-
-          <motion.div
-            variants={orgFlyIn}
-            initial={reduce ? "visible" : "hidden"}
-            animate="visible"
-            className="mx-auto hidden max-w-[140px] shrink text-center text-[#F97316] lg:block xl:max-w-[200px]"
-          >
-            <span className="block whitespace-nowrap text-[0.55rem] font-black uppercase leading-[1.2] tracking-[0.03em] xl:text-[0.68rem]">
-              Sri Sathya Sai
-            </span>
-            <span className="block text-[0.55rem] font-black uppercase leading-[1.2] tracking-[0.03em] xl:text-[0.68rem]">
-              International Organization, USA, Region 7
-            </span>
-          </motion.div>
 
           <button
             type="button"
@@ -111,6 +97,17 @@ export function SiteHeader() {
             )}
           </nav>
         </div>
+
+        <motion.div
+          variants={orgFlyIn}
+          initial={reduce ? "visible" : "hidden"}
+          animate="visible"
+          className="mt-1 hidden text-center text-[#F97316] lg:block"
+        >
+          <span className="text-[0.7rem] font-black uppercase tracking-[0.18em] xl:text-[0.85rem]">
+            Sri Sathya Sai International Organization, USA, Region 7
+          </span>
+        </motion.div>
 
         {open && (
           <nav className="mt-3 flex flex-col gap-2 lg:hidden">

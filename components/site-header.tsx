@@ -67,13 +67,13 @@ export function SiteHeader() {
             variants={orgFlyIn}
             initial={reduce ? "visible" : "hidden"}
             animate="visible"
-            className="mx-auto hidden shrink text-center text-[#F97316] lg:block"
+            className="mx-auto hidden max-w-[140px] shrink text-center text-[#F97316] lg:block xl:max-w-[200px]"
           >
-            <span className="block whitespace-nowrap text-[0.5rem] font-black uppercase leading-[1.2] tracking-[0.04em] xl:text-[0.62rem]">
-              Sri Sathya Sai International Organization,
+            <span className="block whitespace-nowrap text-[0.55rem] font-black uppercase leading-[1.2] tracking-[0.03em] xl:text-[0.68rem]">
+              Sri Sathya Sai
             </span>
-            <span className="block whitespace-nowrap text-[0.5rem] font-black uppercase leading-[1.2] tracking-[0.04em] xl:text-[0.62rem]">
-              USA, Region 7
+            <span className="block text-[0.55rem] font-black uppercase leading-[1.2] tracking-[0.03em] xl:text-[0.68rem]">
+              International Organization, USA, Region 7
             </span>
           </motion.div>
 

@@ -11,7 +11,7 @@ import {
 export default function HomePage() {
   return (
     <main className="pb-10">
-      <section className="page-shell pb-4 pt-6 lg:pb-6 lg:pt-10">
+      <section className="page-shell pb-1 pt-4 lg:pb-2 lg:pt-6">
         <div className="relative grid items-stretch gap-6 lg:grid-cols-[0.8fr,1.5fr,0.8fr] lg:gap-0">
           <Reveal className="card overflow-hidden lg:h-[560px] lg:rounded-r-none" delay={0.05}>
             <div className="relative h-full w-full aspect-[4/5] lg:aspect-auto">
@@ -48,7 +48,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <Reveal as="section" className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-1.5">
         <div className="card relative overflow-hidden p-8 sm:p-10 lg:p-12">
           <div className="absolute inset-0 bg-halo opacity-80" />
           <div className="relative">
@@ -73,7 +73,7 @@ export default function HomePage() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-1.5">
         <section className="card p-8 sm:p-10">
           <p className="pill">Theme</p>
           <h2 className="section-title mt-5">
@@ -99,7 +99,7 @@ export default function HomePage() {
         </section>
       </Reveal>
 
-      <Reveal as="section" className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-1.5">
         <div className="card p-8 sm:p-10">
           <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <div>
@@ -136,7 +136,7 @@ export default function HomePage() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="page-shell py-4">
+      <Reveal as="section" className="page-shell py-1.5">
         <section className="card p-8 sm:p-10">
           <p className="pill">Location</p>
           <h2 className="section-title mt-5">{retreat.venue}</h2>

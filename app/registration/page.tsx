@@ -84,27 +84,27 @@ export default function RegistrationPage() {
           changed after registration.
         </p>
 
-        <div className="mt-6 overflow-x-auto">
-          <table className="w-full min-w-[820px] border-collapse text-left">
+        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-navy">
+          Lodging
+        </p>
+        <div className="mt-3 overflow-x-auto">
+          <table className="w-full min-w-[720px] border-collapse text-left">
             <thead>
               <tr className="bg-navy text-white">
                 <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
                   Age Group
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay (Friday thru Sunday)
+                  Overnight Stay Friday
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay (Friday thru Saturday)
+                  Overnight Stay Saturday
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay (Saturday AM thru Sunday)
-                </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  1 Day Attendee
+                  Day Attendee Saturday (No Lodging)
                 </th>
                 <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  2 Day Attendee
+                  Day Attendee Sunday (No Lodging)
                 </th>
               </tr>
             </thead>
@@ -122,28 +122,32 @@ export default function RegistrationPage() {
                     {row.ageGroup}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.friSun}
+                    {row.overnightFri}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.friSat}
+                    {row.overnightSat}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.satSun}
+                    {row.dayAttSat}
                   </td>
-                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.oneDay}</td>
-                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.twoDay}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
+                    {row.dayAttSun}
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
 
-        <div className="mt-8 overflow-x-auto">
+        <p className="mt-8 text-sm font-semibold uppercase tracking-[0.18em] text-navy">
+          Meals
+        </p>
+        <div className="mt-3 overflow-x-auto">
           <table className="w-full min-w-[540px] border-collapse text-left">
             <thead>
               <tr className="bg-navy text-white">
                 <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Meals
+                  &nbsp;
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
                   5 years and under

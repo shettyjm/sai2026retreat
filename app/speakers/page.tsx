@@ -7,7 +7,7 @@ export default function SpeakersPage() {
   return (
     <>
       <PageBanner />
-      <main className="page-shell py-10 lg:py-14">
+      <main className="page-shell pt-3 pb-10 lg:pt-4 lg:pb-14">
       <div className="card p-8 sm:p-10">
         <p className="pill">Guest Speakers</p>
         <p className="mt-5 max-w-3xl text-xl leading-9 text-navy/78">

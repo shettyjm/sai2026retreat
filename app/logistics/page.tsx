@@ -7,7 +7,7 @@ export default function LogisticsPage() {
   return (
     <>
       <PageBanner />
-      <main className="page-shell py-10 lg:py-14">
+      <main className="page-shell pt-3 pb-10 lg:pt-4 lg:pb-14">
       <div className="grid gap-8 lg:grid-cols-[1.1fr,0.9fr]">
         <section className="card p-8 sm:p-10">
           <p className="pill">Communication</p>

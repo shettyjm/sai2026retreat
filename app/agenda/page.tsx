@@ -7,7 +7,7 @@ export default function AgendaPage() {
   return (
     <>
       <PageBanner />
-      <main className="page-shell grid gap-8 py-10 lg:grid-cols-[0.8fr,1.45fr] lg:py-14">
+      <main className="page-shell grid gap-8 pt-3 pb-10 lg:grid-cols-[0.8fr,1.45fr] lg:pt-4 lg:pb-14">
       <div className="lg:order-2">
         <div className="mb-8 card p-8 sm:p-10">
           <p className="pill">Program</p>

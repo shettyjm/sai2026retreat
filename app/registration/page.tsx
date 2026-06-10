@@ -11,7 +11,7 @@ export default function RegistrationPage() {
   return (
     <>
       <PageBanner />
-      <main className="page-shell py-10 lg:py-14">
+      <main className="page-shell pt-3 pb-10 lg:pt-4 lg:pb-14">
       <section className="card p-8 sm:p-10">
         <p className="pill">Registration</p>
         <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-5xl">

@@ -102,9 +102,9 @@ export function SiteHeader() {
           variants={orgFlyIn}
           initial={reduce ? "visible" : "hidden"}
           animate="visible"
-          className="mt-1 hidden text-center text-[#F97316] lg:block"
+          className="mt-1 block text-center text-[#F97316]"
         >
-          <span className="text-[0.7rem] font-black uppercase tracking-[0.18em] xl:text-[0.85rem]">
+          <span className="text-[0.55rem] font-black uppercase leading-snug tracking-[0.12em] sm:text-[0.65rem] lg:text-[0.7rem] lg:tracking-[0.18em] xl:text-[0.85rem]">
             Sri Sathya Sai International Organization, USA, Region 7
           </span>
         </motion.div>

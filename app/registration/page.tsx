@@ -84,27 +84,27 @@ export default function RegistrationPage() {
           changed after registration.
         </p>
 
-        <p className="mt-6 text-sm font-semibold uppercase tracking-[0.18em] text-navy">
-          Lodging
-        </p>
-        <div className="mt-3 overflow-x-auto">
-          <table className="w-full min-w-[720px] border-collapse text-left">
+        <div className="mt-6 overflow-x-auto">
+          <table className="w-full min-w-[820px] border-collapse text-left">
             <thead>
               <tr className="bg-navy text-white">
                 <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
                   Age Group
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay Friday
+                  Overnight Stay (Friday thru Sunday)
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay Saturday
+                  Overnight Stay (Friday thru Saturday)
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Day Attendee Saturday (No Lodging)
+                  Overnight Stay (Saturday AM thru Sunday)
+                </th>
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
+                  1 Day Attendee
                 </th>
                 <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Day Attendee Sunday (No Lodging)
+                  2 Day Attendee
                 </th>
               </tr>
             </thead>
@@ -122,72 +122,21 @@ export default function RegistrationPage() {
                     {row.ageGroup}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.overnightFri}
+                    {row.friSun}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.overnightSat}
+                    {row.friSat}
                   </td>
                   <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.dayAttSat}
+                    {row.satSun}
                   </td>
-                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">
-                    {row.dayAttSun}
-                  </td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.oneDay}</td>
+                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.twoDay}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
-
-        <p className="mt-8 text-sm font-semibold uppercase tracking-[0.18em] text-navy">
-          Meals
-        </p>
-        <div className="mt-3 overflow-x-auto">
-          <table className="w-full min-w-[540px] border-collapse text-left">
-            <thead>
-              <tr className="bg-navy text-white">
-                <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  &nbsp;
-                </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  5 years and under
-                </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  6 through 11 years
-                </th>
-                <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  12 years and up
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {[
-                { meal: "Friday Dinner", under5: "0", age6_11: "$14.20", age12up: "$21.70" },
-                { meal: "Saturday Breakfast", under5: "0", age6_11: "$10.73", age12up: "$15.71" },
-                { meal: "Saturday Lunch", under5: "0", age6_11: "$12.87", age12up: "$18.89" },
-                { meal: "Saturday Dinner", under5: "0", age6_11: "$14.20", age12up: "$21.70" },
-                { meal: "Sunday Breakfast", under5: "0", age6_11: "$10.73", age12up: "$15.71" },
-                { meal: "Sunday Lunch", under5: "0", age6_11: "$12.87", age12up: "$18.89" },
-                { meal: "Sunday Dinner", under5: "0", age6_11: "$14.20", age12up: "$21.70" },
-              ].map((row, index) => (
-                <tr
-                  key={row.meal}
-                  className={
-                    index % 2 === 0
-                      ? "bg-white text-navy"
-                      : "bg-sand/60 text-navy"
-                  }
-                >
-                  <td className="px-4 py-3 text-base font-semibold">{row.meal}</td>
-                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.under5}</td>
-                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.age6_11}</td>
-                  <td className="px-4 py-3 text-base font-semibold text-[#F97316]">{row.age12up}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-
       </section>
 
       <section className="card mt-8 p-8 sm:p-10">

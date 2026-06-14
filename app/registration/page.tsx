@@ -77,12 +77,6 @@ export default function RegistrationPage() {
         <p className="mt-4 text-base text-navy/70">
           Prices are per person and grouped by age.
         </p>
-        <p className="mt-3 text-base font-semibold leading-7 text-red-600">
-          Please note that this year we are using a new retreat site, which
-          charges separately for meals and facility use. Due to the retreat
-          center&rsquo;s policies, lodging and meal selections cannot be
-          changed after registration.
-        </p>
 
         <div className="mt-6 overflow-x-auto">
           <table className="w-full min-w-[820px] border-collapse text-left">

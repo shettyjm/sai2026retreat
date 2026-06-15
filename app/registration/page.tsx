@@ -141,6 +141,46 @@ export default function RegistrationPage() {
             </tbody>
           </table>
         </div>
+
+        <div className="mt-6 rounded-[1.5rem] bg-sky/55 p-6">
+          <ul className="space-y-3 text-base leading-7 text-navy/80">
+            <li>
+              <span className="font-semibold text-navy">
+                Overnight Stay &ndash; Friday PM to Sunday PM:
+              </span>{" "}
+              Includes lodging for Friday and Saturday nights, dinner on Friday,
+              and breakfast, lunch, and dinner on both Saturday and Sunday.
+            </li>
+            <li>
+              <span className="font-semibold text-navy">
+                Overnight Stay &ndash; Friday PM to Saturday PM:
+              </span>{" "}
+              Includes lodging for Friday night, dinner on Friday, and
+              breakfast, lunch, and dinner on Saturday.
+            </li>
+            <li>
+              <span className="font-semibold text-navy">
+                Overnight Stay &ndash; Saturday AM to Sunday PM:
+              </span>{" "}
+              Includes lodging for Saturday night, and breakfast, lunch, and
+              dinner on both Saturday and Sunday.
+            </li>
+            <li>
+              <span className="font-semibold text-navy">
+                Day Attendee &ndash; Saturday (No Lodging):
+              </span>{" "}
+              Includes breakfast, lunch, and dinner on Saturday, along with
+              access to all Saturday activities. Lodging is not included.
+            </li>
+            <li>
+              <span className="font-semibold text-navy">
+                Day Attendee &ndash; Sunday (No Lodging):
+              </span>{" "}
+              Includes breakfast, lunch, and dinner on Sunday, along with
+              access to all Sunday activities. Lodging is not included.
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section className="card mt-8 p-8 sm:p-10">

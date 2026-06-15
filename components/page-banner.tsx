@@ -4,7 +4,7 @@ export function PageBanner() {
   return (
     <section className="page-shell pt-6 lg:pt-8">
       <div className="card overflow-hidden">
-        <div className="relative aspect-[16/6] min-h-[140px] w-full bg-navy sm:aspect-[16/6] sm:min-h-[200px] lg:aspect-[16/4] lg:min-h-[240px]">
+        <div className="relative aspect-[16/5.4] min-h-[126px] w-full bg-navy sm:aspect-[16/6] sm:min-h-[200px] lg:aspect-[16/4] lg:min-h-[240px]">
           <div className="absolute inset-y-0 left-0 w-[68%]">
             <Image
               src="/photo2.png"

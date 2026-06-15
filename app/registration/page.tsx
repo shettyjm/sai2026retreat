@@ -85,20 +85,30 @@ export default function RegistrationPage() {
                 <th className="rounded-tl-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
                   Age Group
                 </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay (Friday thru Sunday)
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
+                  Overnight Stay
+                  <br />
+                  Friday PM - Sunday PM
                 </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay (Friday thru Saturday)
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
+                  Overnight Stay
+                  <br />
+                  Friday PM - Saturday PM
                 </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  Overnight Stay (Saturday AM thru Sunday)
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
+                  Overnight Stay
+                  <br />
+                  Saturday AM - Sunday PM
                 </th>
-                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  1 Day Attendee
+                <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
+                  Day Attendee Saturday
+                  <br />
+                  (No Lodging)
                 </th>
-                <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider">
-                  2 Day Attendee
+                <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
+                  Day Attendee Sunday
+                  <br />
+                  (No Lodging)
                 </th>
               </tr>
             </thead>

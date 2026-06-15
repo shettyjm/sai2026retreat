@@ -85,7 +85,7 @@ export const pricingRows: PricingRow[] = [
     friSat: "96",
     satSun: "120",
     oneDay: "56.5",
-    twoDay: "113",
+    twoDay: "56.5",
   },
   {
     ageGroup: "12 years and up",
@@ -93,7 +93,7 @@ export const pricingRows: PricingRow[] = [
     friSat: "160",
     satSun: "194",
     oneDay: "91",
-    twoDay: "182",
+    twoDay: "91",
   },
 ];
 

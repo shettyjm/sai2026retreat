@@ -89,8 +89,9 @@ export default function HomePage() {
               peace and bliss.
             </p>
             <p>
-              A spiritual athlete uses every moment of life to act with excellence, live
-              with values, and realize their inner divinity.
+              A Spiritual Athlete tunes the Body and Mind with an intense practice
+              of Sai Spiritual Values of Selfless Service and Holy Company in their
+              relentless pursuit of Self-Realization.
             </p>
             <p>
               To be a spiritual athlete is to turn life into a sacred training ground.

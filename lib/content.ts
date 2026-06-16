@@ -57,7 +57,7 @@ export const lodgingOptions: {
   {
     title: "Day Use",
     description:
-      "For people who will attend the retreat for one day or two days with no overnight stay onsite.",
+      "For people who will attend the retreat for one day or two days with no overnight stay onsite",
   },
 ];
 

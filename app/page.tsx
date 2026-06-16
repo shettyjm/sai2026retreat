@@ -108,7 +108,7 @@ export default function HomePage() {
               <h2 className="section-title mt-5">A day-by-day timeline at a glance</h2>
             </div>
             <Link href="/agenda" className="text-lg font-semibold text-saffron hover:text-navy">
-              Open the full program
+              Full program
             </Link>
           </div>
           <div className="mt-8 grid gap-5 lg:grid-cols-3">

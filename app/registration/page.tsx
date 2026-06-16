@@ -200,7 +200,7 @@ export default function RegistrationPage() {
       <section className="card mt-8 p-8 sm:p-10">
         <p className="pill">Questions</p>
         <p className="mt-5 text-lg leading-8 text-navy/80">
-          For any questions, please email{" "}
+          For any questions, please email us @{" "}
           <Link
             href={`mailto:${retreat.registrationEmail}`}
             className="font-semibold text-saffron hover:text-navy"

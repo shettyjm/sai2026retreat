@@ -191,8 +191,8 @@ export default function RegistrationPage() {
         <p className="mt-5 text-lg leading-8 text-navy/80">
           We do not want anyone to miss the retreat because of
           financial constraints. Participants may apply for scholarships or
-          need-based financial assistance. Please get in touch with registration
-          for scholarships. Participants may also voluntarily contribute towards
+          need-based financial assistance. Please get in touch with the
+          registration team for scholarships. Participants may also voluntarily contribute towards
           scholarship amounts beyond the retreat fee.
         </p>
       </section>

@@ -24,7 +24,7 @@ export default function RegistrationPage() {
         <p className="mt-6 text-lg leading-8 text-navy/80">
           Please read the following instructions and click the{" "}
           <span className="font-semibold">Register</span> button at the bottom
-          of this page to register using a credit card. If you would like to
+          of this page to register using a credit card or PayPal. If you would like to
           mail a check, please send an email to{" "}
           <Link
             href={`mailto:${retreat.registrationEmail}`}

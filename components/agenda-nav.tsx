@@ -7,9 +7,6 @@ export function AgendaNav() {
     <div className="card sticky top-24 p-5">
       <p className="pill mb-4">Program Access</p>
       <h2 className="text-2xl font-semibold">A day at a glance</h2>
-      <p className="mt-2 text-base leading-7 text-navy/75">
-        Keep the program easy to reach from every stage of the retreat.
-      </p>
       <div className="mt-5 grid gap-3">
         {agenda.map((day) => (
           <Link

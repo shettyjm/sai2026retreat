@@ -12,9 +12,7 @@ export default function AgendaPage() {
         <div className="mb-8 card p-8 sm:p-10">
           <p className="pill">Program</p>
           <h1 className="mt-5 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
-            Walk through of the Retreat
-            <br />
-            One Day at a Time
+            Walk through of the Retreat, one day at a time
           </h1>
         </div>
 

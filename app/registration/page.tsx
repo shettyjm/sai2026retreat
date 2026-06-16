@@ -101,14 +101,14 @@ export default function RegistrationPage() {
                   Saturday AM - Sunday PM
                 </th>
                 <th className="px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
-                  Day Attendee Saturday
+                  Day Attendee
                   <br />
-                  (No Lodging)
+                  (Saturday Or Sunday, No Lodging)
                 </th>
                 <th className="rounded-tr-2xl px-4 py-3 text-sm font-semibold uppercase tracking-wider leading-tight">
-                  Day Attendee Sunday
+                  Day Attendee
                   <br />
-                  (No Lodging)
+                  (Saturday and Sunday, No Lodging)
                 </th>
               </tr>
             </thead>

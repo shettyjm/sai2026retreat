@@ -191,13 +191,9 @@ export default function RegistrationPage() {
         <p className="mt-5 text-lg leading-8 text-navy/80">
           We do not want anyone to miss the retreat because of
           financial constraints. Participants may apply for scholarships or
-          need-based financial assistance. However, scholarship funds are
-          limited, and devotees are encouraged to consider all stay options.
-          Scholarships will be evaluated on a case-by-case basis, and we might
-          have to wait until we receive all scholarship requests before deciding.
-          Please get in touch with registration for scholarships. Participants
-          may also voluntarily contribute towards scholarship amounts beyond the
-          retreat fee.
+          need-based financial assistance. Please get in touch with registration
+          for scholarships. Participants may also voluntarily contribute towards
+          scholarship amounts beyond the retreat fee.
         </p>
       </section>
 

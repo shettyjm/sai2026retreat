@@ -216,7 +216,7 @@ export default function RegistrationPage() {
           Ready to register?
         </p>
         <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-          Complete your registration with a credit card
+          Complete your registration with a credit card or a PayPal account
         </h2>
         <p className="mt-4 max-w-2xl text-lg leading-8 text-white/85">
           The Register button below opens the secure Cognito Forms registration
